@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ExpensesPage;
 import pages.HomePage;
@@ -17,7 +18,7 @@ public class ExpensesModule {
     @Test
     public void creatingNewExpenseProduct(){
 
-        Driver.getDriver().get(Config.getProperty("url"));
+
         LoginPage lp = new LoginPage();
 
         lp.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
@@ -37,6 +38,18 @@ public class ExpensesModule {
         WebElement productTypeDropdown = Driver.getDriver().findElement(By.id("o_field_input_97"));
         Select select = new Select(productTypeDropdown);
         select.selectByVisibleText("Consumable");
+
+        WebElement taxTypesDropdown = Driver.getDriver().findElement(By.id("o_field_input_104"));
+        taxTypesDropdown.click();
+
+        WebElement salesTaxSelection = Driver.getDriver().findElement(By.xpath("//a[.='sales']"));
+        salesTaxSelection.click();
+
+        WebElement archiveButton = Driver.getDriver().findElement(By.cssSelector("button.btn.btn-sm.oe_stat_button"));
+        boolean check = archiveButton.isEnabled();
+
+        Assert.assertTrue(check, "Verification of archieving new expense product is FAILED");
+
     }
 
     @Test
