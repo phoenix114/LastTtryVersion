@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ExpensesPage;
 import pages.HomePage;
@@ -67,5 +68,37 @@ public class ExpensesModule {
         chooseFile.sendKeys("C:\\Users\\delal\\Desktop\\mavenb11\\briteERP.txt"+ Keys.ENTER);
         Thread.sleep(2000);
 
+    }
+
+
+    @Test
+    public void brtPractTest2()throws InterruptedException {
+        Driver.getDriver().get(Config.getProperty("url"));
+        LoginPage loginPage = new LoginPage();
+        loginPage.briteERPLogin("in_ex_manager@info.com", "LLighg88");
+
+        HomePage homePage = new HomePage();
+        homePage.expensesButton.click();
+        Thread.sleep(2000);
+        ExpensesPage expensesPage = new ExpensesPage();;
+        Thread.sleep(2500);
+        expensesPage.creatButtonA.click();
+        Thread.sleep(2000);
+
+       expensesPage.productWindowA.click();
+        Thread.sleep(2000);
+        expensesPage.iPhoneInProductA.click();
+        Thread.sleep(2000);
+        expensesPage.employeeWindowA.click();
+        Thread.sleep(2000);
+        expensesPage.antonieInEmployeeA.click();
+        Thread.sleep(2000);
+        expensesPage.documentsButtonA.click();
+        Thread.sleep(2000);
+        expensesPage.createButtonAfterclickDocumentsA.click();
+        Thread.sleep(2000);
+        expensesPage.discardButtonA.click();
+        Thread.sleep(2000);
+        Assert.assertTrue(expensesPage.expectedElementAfterDiscardA.getText().contains(expensesPage.expectedText),"Failed, expected text is not matching... ");
     }
 }
