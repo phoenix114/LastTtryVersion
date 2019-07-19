@@ -55,6 +55,7 @@ public class ExpensesModule {
 
     }
 
+<<<<<<< Updated upstream
     @Test
     public void uploadDc()throws InterruptedException{
         Driver.getDriver().get(Config.getProperty("url"));
@@ -86,4 +87,6 @@ public class ExpensesModule {
 
     }
 
+=======
+>>>>>>> Stashed changes
 }
