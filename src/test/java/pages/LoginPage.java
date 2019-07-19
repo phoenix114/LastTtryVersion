@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 import utilities.Config;
+
 
 import utilities.Driver;
 
@@ -31,6 +33,7 @@ public class LoginPage {
 
 
     public void briteERPLogin(String email, String password){
+
         Driver.getDriver().get(Config.getProperty("url"));
         emailBox.sendKeys(email);
         passwordBox.sendKeys(password);
