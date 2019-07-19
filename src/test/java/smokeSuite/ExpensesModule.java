@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import pages.ExpensesPage;
 import pages.HomePage;
@@ -13,14 +14,17 @@ import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
 
+
 import java.util.List;
+
+import static utilities.Config.getProperty;
+
 
 public class ExpensesModule {
 
 
     @Test
     public void creatingNewExpenseProduct(){
-
 
         LoginPage lp = new LoginPage();
 
@@ -36,7 +40,7 @@ public class ExpensesModule {
         createButton.click();
 
         WebElement productNameBox = Driver.getDriver().findElement(By.cssSelector("input#o_field_input_95"));
-        productNameBox.sendKeys(Config.getProperty("productName1"));
+        productNameBox.sendKeys(getProperty("productName1"));
 
         WebElement productTypeDropdown = Driver.getDriver().findElement(By.id("o_field_input_97"));
         Select select = new Select(productTypeDropdown);
@@ -55,6 +59,8 @@ public class ExpensesModule {
 
 
     }
+
+
 
     @Test
     public void uploadDc()throws InterruptedException{
@@ -86,6 +92,8 @@ public class ExpensesModule {
 
 
     }
+
+
 
 
     @Test
@@ -235,6 +243,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
     }
 
+
     @Test
     public void expenseReportsAnalysisByBilal(){
         LoginPage lp = new LoginPage();
@@ -285,6 +294,177 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
         boolean check = tagForTheEmployeeAshleyPresley.isDisplayed();
         Assert.assertTrue(check, "Verification of presenting the name on the all expense reports is FAILED");
 
+    }
+
+
+
+    @Test
+    public void munevverExpenseReports() throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        String expectedDate ="07/22/2019";
+
+        String expectedEmployeeName = "Ashley Presley";
+
+        Assert.assertEquals(expensesPage.actualDate.getText(), expectedDate);
+
+        Assert.assertTrue(expensesPage.actualEmployeeName.getText().equals(expectedEmployeeName));
+    }
+
+    @Test
+    public void muneevverExpenseRefused () throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        String expectedRefusedReports = "Refused Reports";
+
+        String expectedExpenseAnalysis = "Expenses Analysis";
+
+        Assert.assertTrue(expensesPage.actualRefusedReports.isDisplayed());
+
+        Assert.assertEquals(expensesPage.actualExpenseAnalysis.getText(), (expectedExpenseAnalysis));
+    }
+
+    @Test
+
+    public void munevverAttachmentNameAndType() throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        expensesPage.document.click();
+
+        expensesPage.createAttachment.click();
+
+        expensesPage.typeAttachment.sendKeys("munevver file");
+
+        Select select = new Select(expensesPage.type);
+        select.selectByIndex(1);
+
+        expensesPage.url.sendKeys("https://www.google.com/");
+
+        expensesPage.save.click();
+
+        String expectedUrl ="https://www.google.com/";
+
+        Assert.assertEquals(expensesPage.actualUrl.getAttribute("href") , expectedUrl);
+    }
+
+
+
+    @Test
+    public void uploadExpensesAzamat()throws InterruptedException {
+        Driver.getDriver().get(Config.getProperty("url"));
+        LoginPage loginPage = new LoginPage();
+        loginPage.briteERPLogin("in_ex_manager@info.com", "LLighg88");
+
+        HomePage homePage = new HomePage();
+        homePage.expensesButton.click();
+        Thread.sleep(2000);
+        ExpensesPage expensesPage = new ExpensesPage();
+        Thread.sleep(2500);
+        expensesPage.creatButtonA.click();
+        Thread.sleep(2000);
+
+       expensesPage.productWindowA.click();
+        Thread.sleep(2000);
+        expensesPage.iPhoneInProductA.click();
+        Thread.sleep(2000);
+        expensesPage.employeeWindowA.click();
+        Thread.sleep(2000);
+        expensesPage.antonieInEmployeeA.click();
+        Thread.sleep(2000);
+        expensesPage.documentsButtonA.click();
+        Thread.sleep(2000);
+        expensesPage.createButtonAfterclickDocumentsA.click();
+        Thread.sleep(2000);
+        expensesPage.discardButtonA.click();
+        Thread.sleep(2000);
+        Assert.assertTrue(expensesPage.expectedElementAfterDiscardA.getText().contains(expensesPage.expectedText),"Failed, expected text is not matching... ");
+
+    }
+
+    @AfterClass
+    public void endingTheSmokeSuite(){
+        Driver.quitDriver();
     }
 
 
