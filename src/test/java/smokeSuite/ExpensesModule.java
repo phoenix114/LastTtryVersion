@@ -12,6 +12,8 @@ import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
 
+import static utilities.Config.getProperty;
+
 public class ExpensesModule {
 
 
@@ -33,7 +35,7 @@ public class ExpensesModule {
         createButton.click();
 
         WebElement productNameBox = Driver.getDriver().findElement(By.cssSelector("input#o_field_input_95"));
-        productNameBox.sendKeys(Config.getProperty("productName1"));
+        productNameBox.sendKeys(getProperty("productName1"));
 
         WebElement productTypeDropdown = Driver.getDriver().findElement(By.id("o_field_input_97"));
         Select select = new Select(productTypeDropdown);
@@ -83,4 +85,5 @@ public class ExpensesModule {
 
 
     }
+
 }
