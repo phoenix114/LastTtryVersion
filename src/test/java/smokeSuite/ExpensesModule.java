@@ -20,7 +20,6 @@ public class ExpensesModule {
     @Test
     public void creatingNewExpenseProduct(){
 
-
         LoginPage lp = new LoginPage();
 
         lp.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
@@ -55,7 +54,7 @@ public class ExpensesModule {
 
     }
 
-<<<<<<< Updated upstream
+
     @Test
     public void uploadDc()throws InterruptedException{
         Driver.getDriver().get(Config.getProperty("url"));
@@ -87,10 +86,7 @@ public class ExpensesModule {
 
     }
 
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
+
 
     @Test
     public void totalAmountToSubmitHilal() throws InterruptedException {
@@ -238,5 +234,5 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
         Assert.assertTrue(!selectEmployee.isDisplayed());
 
     }
->>>>>>> 1adf2ff11efa4cb2a700a3352318ecff32f46f0e
+
 }
