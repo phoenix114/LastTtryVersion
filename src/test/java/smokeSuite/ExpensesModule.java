@@ -371,7 +371,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
 
     @Test
-    public void brtPractTest2()throws InterruptedException {
+    public void uploadExpensesAzamat()throws InterruptedException {
         Driver.getDriver().get(Config.getProperty("url"));
         LoginPage loginPage = new LoginPage();
         loginPage.briteERPLogin("in_ex_manager@info.com", "LLighg88");
