@@ -19,7 +19,16 @@ public class HomePage {
     public WebElement expensesButton;
 
 
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_list_button_add']")
+    public WebElement createButton;
+
+
     public void clickingOnExpensesButton(){
         expensesButton.click();
     }
+
+    public void clickingOnCreateButton(){
+        createButton.click();
+    }
+
 }
