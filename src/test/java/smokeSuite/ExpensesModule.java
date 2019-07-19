@@ -55,6 +55,7 @@ public class ExpensesModule {
     }
 
 
+
     @Test
     public void uploadDc()throws InterruptedException{
         Driver.getDriver().get(Config.getProperty("url"));
@@ -234,6 +235,137 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
         Thread.sleep(1000);
         Assert.assertTrue(!selectEmployee.isDisplayed());
 
+    }
+
+
+    @Test
+    public void munevverExpenseReports() throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        String expectedDate ="07/22/2019";
+
+        String expectedEmployeeName = "Ashley Presley";
+
+        Assert.assertEquals(expensesPage.actualDate.getText(), expectedDate);
+
+        Assert.assertTrue(expensesPage.actualEmployeeName.getText().equals(expectedEmployeeName));
+    }
+
+    @Test
+    public void muneevverExpenseRefused () throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        String expectedRefusedReports = "Refused Reports";
+
+        String expectedExpenseAnalysis = "Expenses Analysis";
+
+        Assert.assertTrue(expensesPage.actualRefusedReports.isDisplayed());
+
+        Assert.assertEquals(expensesPage.actualExpenseAnalysis.getText(), (expectedExpenseAnalysis));
+    }
+
+    @Test
+
+    public void munevverAttachmentNameAndType() throws InterruptedException {
+
+        LoginPage loginPage = new LoginPage();
+
+        loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        Thread.sleep(2000);
+
+        ExpensesPage expensesPage = new ExpensesPage();
+
+        expensesPage.expenses.click();
+
+        expensesPage.createButton.click();
+
+        expensesPage.customer.sendKeys("Munevver");
+
+        expensesPage.product.click();
+
+        expensesPage.chooseProduct.click();
+
+        expensesPage.dateInput.click();
+
+        expensesPage.datebox.click();
+
+        expensesPage.employeeInput.click();
+
+        expensesPage.employeeName.click();
+
+        expensesPage.clickSave.click();
+
+        expensesPage.document.click();
+
+        expensesPage.createAttachment.click();
+
+        expensesPage.typeAttachment.sendKeys("munevver file");
+
+        Select select = new Select(expensesPage.type);
+        select.selectByIndex(1);
+
+        expensesPage.url.sendKeys("https://www.google.com/");
+
+        expensesPage.save.click();
+
+        String expectedUrl ="https://www.google.com/";
+
+        Assert.assertEquals(expensesPage.actualUrl.getAttribute("href") , expectedUrl);
     }
 
 
