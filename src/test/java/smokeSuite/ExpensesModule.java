@@ -3,8 +3,10 @@ package smokeSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import pages.ExpensesPage;
 import pages.HomePage;
@@ -12,7 +14,11 @@ import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
 
+
+import java.util.List;
+
 import static utilities.Config.getProperty;
+
 
 public class ExpensesModule {
 
@@ -239,6 +245,60 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
 
     @Test
+    public void expenseReportsAnalysisByBilal(){
+        LoginPage lp = new LoginPage();
+
+        lp.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
+
+        HomePage hp = new HomePage();
+        hp.clickingOnExpensesButton();
+
+        hp.clickingOnCreateButton();
+
+        WebElement expenseDescriptionBox = Driver.getDriver().findElement(By.id("o_field_input_18"));
+        expenseDescriptionBox.sendKeys(Config.getProperty("expenseDescription1"));
+
+        WebElement productDropdown = Driver.getDriver().findElement(By.id("o_field_input_19"));
+        productDropdown.click();
+
+        WebElement selectingLaptop = Driver.getDriver().findElement(By.xpath("//a[.='[E-COM05] laptop']"));
+        selectingLaptop.click();
+
+        WebElement unitPriceBox = Driver.getDriver().findElement(By.id("o_field_input_20"));
+        unitPriceBox.clear();
+        unitPriceBox.sendKeys("5000000000000000000");
+
+        WebElement employeeDropdown = Driver.getDriver().findElement(By.id("o_field_input_27"));
+        employeeDropdown.click();
+
+        WebElement employeeAshleyPresley = Driver.getDriver().findElement(By.xpath("//a[.='Ashley Presley']"));
+        employeeAshleyPresley.click();
+
+        WebElement submitToManagerButton = Driver.getDriver().findElement(By.xpath("//button[.='Submit to Manager']"));
+        submitToManagerButton.click();
+
+        WebElement approveButton = Driver.getDriver().findElement(By.xpath("//button[.='Approve']"));
+        approveButton.click();
+
+        WebElement expensesRepoprtsAnalysisButton = Driver.getDriver().findElement(By.xpath("//a[@data-menu-xmlid='hr_expense.menu_hr_expense_sheet_all_all']//span"));
+        expensesRepoprtsAnalysisButton.click();
+
+        List<WebElement> barsOnTheGraph = Driver.getDriver().findElements(By.cssSelector("rect.nv-bar.positive"));
+
+        WebElement barForAshleyPresley = barsOnTheGraph.get(1);
+
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(barForAshleyPresley).perform();
+
+        WebElement tagForTheEmployeeAshleyPresley = Driver.getDriver().findElement(By.xpath("//strong[.='Ashley Presley']"));
+        boolean check = tagForTheEmployeeAshleyPresley.isDisplayed();
+        Assert.assertTrue(check, "Verification of presenting the name on the all expense reports is FAILED");
+
+    }
+
+
+
+    @Test
     public void munevverExpenseReports() throws InterruptedException {
 
         LoginPage loginPage = new LoginPage();
@@ -371,7 +431,11 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
 
     @Test
+<<<<<<< HEAD
     public void expensesUploadAzamat()throws InterruptedException {
+=======
+    public void uploadExpensesAzamat()throws InterruptedException {
+>>>>>>> 5e3fe28b06a214cdb116e0f8984f5c6188a331bf
         Driver.getDriver().get(Config.getProperty("url"));
         LoginPage loginPage = new LoginPage();
         loginPage.briteERPLogin("in_ex_manager@info.com", "LLighg88");
@@ -379,7 +443,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
         HomePage homePage = new HomePage();
         homePage.expensesButton.click();
         Thread.sleep(2000);
-        ExpensesPage expensesPage = new ExpensesPage();;
+        ExpensesPage expensesPage = new ExpensesPage();
         Thread.sleep(2500);
         expensesPage.creatButtonA.click();
         Thread.sleep(2000);
@@ -399,6 +463,13 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
         expensesPage.discardButtonA.click();
         Thread.sleep(2000);
         Assert.assertTrue(expensesPage.expectedElementAfterDiscardA.getText().contains(expensesPage.expectedText),"Failed, expected text is not matching... ");
+
     }
+
+    @AfterClass
+    public void endingTheSmokeSuite(){
+        Driver.quitDriver();
+    }
+
 
 }

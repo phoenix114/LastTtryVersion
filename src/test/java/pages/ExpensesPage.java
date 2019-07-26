@@ -85,8 +85,11 @@ public class ExpensesPage {
     public WebElement actualUrl;
 
     public void clickingExpenseProductsButton(){
+
         expenseProductsButton.click();
     }
+
+
 
     @FindBy(xpath = "//div[@class='o_list_buttons']/button[1]")
     public WebElement creatButtonA;
@@ -125,5 +128,10 @@ public class ExpensesPage {
     public WebElement expectedElementAfterDiscardA;
 
     public String expectedText = "Click here to attach a new document";
+
+
+
+
+
 
 }
