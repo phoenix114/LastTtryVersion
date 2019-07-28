@@ -434,7 +434,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
     public void expensesUploadAzamat()throws InterruptedException {
 
-        System.out.println();
+
 
         Driver.getDriver().get(Config.getProperty("url"));
         LoginPage loginPage = new LoginPage();
