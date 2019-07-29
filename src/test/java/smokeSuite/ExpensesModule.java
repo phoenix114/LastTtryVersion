@@ -432,7 +432,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
     @Test
 
-    public void expensesUploadAzamat()throws InterruptedException {
+    public void expensesUpload()throws InterruptedException {
 
 
 
@@ -442,26 +442,27 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
         HomePage homePage = new HomePage();
         homePage.expensesButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         ExpensesPage expensesPage = new ExpensesPage();
-        Thread.sleep(2500);
+        Thread.sleep(2000);
         expensesPage.creatButtonA.click();
         Thread.sleep(2000);
 
        expensesPage.productWindowA.click();
         Thread.sleep(2000);
         expensesPage.iPhoneInProductA.click();
-        Thread.sleep(2000);
+
+        Thread.sleep(1000);
         expensesPage.employeeWindowA.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         expensesPage.antonieInEmployeeA.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         expensesPage.documentsButtonA.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         expensesPage.createButtonAfterclickDocumentsA.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         expensesPage.discardButtonA.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Assert.assertTrue(expensesPage.expectedElementAfterDiscardA.getText().contains(expensesPage.expectedText),"Failed, expected text is not matching... ");
 
     }
