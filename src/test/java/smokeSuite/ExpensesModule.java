@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.ExpensesPage;
 import pages.HomePage;
@@ -429,7 +430,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
     }
 
 
-
+    @Ignore
     @Test
 
     public void expensesUpload()throws InterruptedException {

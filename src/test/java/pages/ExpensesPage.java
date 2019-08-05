@@ -106,7 +106,7 @@ public class ExpensesPage {
     @FindBy(id = "o_field_input_19")
     public WebElement productWindowA;
 
-    @FindBy(xpath = "//a[.='[///] iphone 8']")
+    @FindBy(xpath = "//*[@id=\"ui-id-20\"]/a")
     public WebElement iPhoneInProductA;
 
     @FindBy(xpath = "//div[@class='o_group']//table[2]//tr[4]//label")
