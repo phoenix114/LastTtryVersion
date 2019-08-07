@@ -34,7 +34,7 @@ public class LoginPage {
 
     public void briteERPLogin(String email, String password){
 
-        Driver.getDriver().get(Config.getProperty("url"));
+       // Driver.getDriver().get(Config.getProperty("url"));
         emailBox.sendKeys(email);
         passwordBox.sendKeys(password);
         loginButton.click();
