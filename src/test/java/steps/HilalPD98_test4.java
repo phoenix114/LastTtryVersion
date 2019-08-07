@@ -87,13 +87,14 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
     }
 
     @Then("user clicks on the Submit button")
-    public void user_clicks_on_the_Submit_button() {
+    public void user_clicks_on_the_Submit_button() throws InterruptedException {
         WebElement submitButton = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div[1]/button[1]"));
         submitButton.click();
 
         WebElement expectedText = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[4]/ul/li[1]/a"));
         Assert.assertTrue(expectedText.isDisplayed());
-        Driver.getDriver().close();
+       // Driver.getDriver().close();
+        Thread.sleep(2000);
     }
 
 }
