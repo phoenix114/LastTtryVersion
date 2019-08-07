@@ -467,10 +467,10 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
 
     }
 
-    @AfterClass
-    public void endingTheSmokeSuite(){
-        Driver.quitDriver();
-    }
+//    @AfterClass
+//    public void endingTheSmokeSuite(){
+//        Driver.quitDriver();
+//    }
 
 
 }
