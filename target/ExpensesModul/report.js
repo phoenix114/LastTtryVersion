@@ -24,6 +24,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "creatingNewExpenseProduct",
   "description": "",
@@ -36,16 +46,6 @@ formatter.scenario({
       "name": "@test1"
     }
   ]
-});
-formatter.step({
-  "name": "click to home page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.click_to_home_page()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "click to ExpenseProductButton",
@@ -132,6 +132,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Uploading attachment to the Expenses To Submit",
   "description": "",
@@ -144,16 +154,6 @@ formatter.scenario({
       "name": "@test2"
     }
   ]
-});
-formatter.step({
-  "name": "click to Expense Product Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DelalPD121_test2.click_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "click to create Button",
@@ -216,10 +216,6 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "User click to expenses link",
-  "keyword": "And "
-});
-formatter.step({
   "name": "user create Button click",
   "keyword": "And "
 });
@@ -279,6 +275,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "totalAmountToSubmitHilal",
   "description": "",
@@ -291,16 +297,6 @@ formatter.scenario({
       "name": "@test3"
     }
   ]
-});
-formatter.step({
-  "name": "User click to expenses link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD94_test3.user_click_to_expenses_link()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "user create Button click",
@@ -373,10 +369,6 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "user is clicking the  ExpenseProductButton",
-  "keyword": "When "
-});
-formatter.step({
   "name": "user is clicking  the create Button",
   "keyword": "Then "
 });
@@ -430,6 +422,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
   "description": "",
@@ -442,16 +444,6 @@ formatter.scenario({
       "name": "@test4"
     }
   ]
-});
-formatter.step({
-  "name": "user is clicking the  ExpenseProductButton",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_is_clicking_the_ExpenseProductButton()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "user is clicking  the create Button",
@@ -518,6 +510,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Choosing Employee Name From Dropdown List on Expenses To Submit Page",
   "description": "",
@@ -530,16 +532,6 @@ formatter.scenario({
       "name": "@test5"
     }
   ]
-});
-formatter.step({
-  "name": "user is clicking on the ExpenseProductButton",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "HilalPD99_test5.user_is_clicking_on_the_ExpenseProductButton()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.step({
   "name": "user is clicking  on the create Button",

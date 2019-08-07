@@ -3,13 +3,11 @@ Feature: Test Expenses Module
 
   Background: User on the Login page
     Given User on the web page and login username "manager1Email" and password "manager1Password"
+    When User in home page and clicking to Expense Product Button
 
 
   @test1
   Scenario: creatingNewExpenseProduct
-
-
-    And click to home page
     And click to ExpenseProductButton
     And click to creat Button
     And type product name in productNameBox
@@ -23,7 +21,7 @@ Feature: Test Expenses Module
   @test2
   Scenario: Uploading attachment to the Expenses To Submit
 
-    And click to Expense Product Button
+
     Then click to create Button
     And user fills out all the mandatory fields
     And user clicks on Documents Button
@@ -35,7 +33,7 @@ Feature: Test Expenses Module
   Scenario Outline:  totalAmountToSubmitHilal
 
 
-    And User click to expenses link
+
     And user create Button click
     And user clicking on productDropDown button
     And user click on tshirt button
@@ -51,7 +49,7 @@ Feature: Test Expenses Module
   @test4
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
 
-    When user is clicking the  ExpenseProductButton
+
     Then user is clicking  the create Button
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
@@ -64,7 +62,6 @@ Feature: Test Expenses Module
   @test5
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
 
-    When user is clicking on the ExpenseProductButton
     Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
     And user selects the Employee Name

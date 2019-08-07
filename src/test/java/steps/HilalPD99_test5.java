@@ -11,32 +11,6 @@ import utilities.Driver;
 
 public class HilalPD99_test5 {
 
-    @Given("user log in the webpage where username is {string} and {string}")
-    public void user_log_in_the_webpage_where_username_is_and(String string, String string2) throws InterruptedException {
-           /*
- PD-99 / As user i would like to be able to select my name
-1 - Go to the Brite ERP Website-->the user should be able to open the website
-2 - select the expenses button-->the user should be able to open the website
-3 - Click on the create button-->The user should be able to click the button and see the all the functionality
-4 - Click on Employee tab-->The user should be able to click on the button and should be able to see the names in dropdown list
-5 - Select the employee name-->The user should be able to select their name under the Employees dropdown list
-         */
-        // Driver.getDriver().get("http://54.148.96.210/web/login");
-        Thread.sleep(1000);
-//        WebElement email  = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-login']//input"));
-//        WebElement password = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-password']/input"));
-//        email.sendKeys("in_ex_manager@info.com");
-//        password.sendKeys("LLighg88");
-
-        LoginPage lg= new LoginPage();
-        lg.briteERPLogin(string,string2);
-
-        Thread.sleep(1000);
-//        WebElement logInButton = Driver.getDriver().findElement(By.xpath("//div[@class='clearfix oe_login_buttons']/button"));
-//        logInButton.click();
-//        Thread.sleep(2000);
-    }
-
 
     @When("user is clicking on the ExpenseProductButton")
     public void user_is_clicking_on_the_ExpenseProductButton() throws InterruptedException {

@@ -22,13 +22,13 @@ public class BilalPD116_test1 {
          lp.briteERPLogin(Config.getProperty(string), Config.getProperty(string2));// Given website url
         Thread.sleep(2000);
     }
-
-
-    @Given("click to home page")
-    public void click_to_home_page() {
+    @When("User in home page and clicking to Expense Product Button")
+    public void user_in_home_page_and_clicking_to_Expense_Product_Button() {
         HomePage hp = new HomePage();
         hp.clickingOnExpensesButton();   // Then click to home page;
     }
+
+
 
     @Given("click to ExpenseProductButton")
     public void click_to_ExpenseProductButton() throws InterruptedException {
