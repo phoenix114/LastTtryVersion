@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         plugin = "html:target/ExpensesModul",
-        features = "C:\\Users\\Customer\\IdeaProjects\\phoenixmonjuly15updated\\src\\test\\resources\\feature\\expenses.feature",
+
+
+        features = "src/test/resources/feature/expenses.feature",
+
         glue = "steps",
         tags = " @test4" ,
         dryRun=false

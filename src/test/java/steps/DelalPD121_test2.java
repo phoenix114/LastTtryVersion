@@ -9,21 +9,6 @@ import utilities.Driver;
 
 public class DelalPD121_test2 {
 
-    @When("user log in the webpage {string} and  {string}")
-    public void user_log_in_the_webpage_and(String string, String string2) throws InterruptedException {
-        //Driver.getDriver().get(Config.getProperty("url"));
-        Thread.sleep(1000);//Given website url
-        WebElement email  = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-login']//input"));
-        WebElement password = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-password']/input"));
-        email.sendKeys(string);
-        password.sendKeys(string2);
-        Thread.sleep(1000);
-        WebElement logInButton = Driver.getDriver().findElement(By.xpath("//div[@class='clearfix oe_login_buttons']/button"));
-        logInButton.click(); // When sign in to website
-    }
-
-
-
 
 
     @When("click to Expense Product Button")
