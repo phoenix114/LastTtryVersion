@@ -61,4 +61,30 @@ Feature: Test Expenses Module
 
 
 
+    @test9
+    Scenario Outline: select Employee Name From Dropdown List on Expenses To Submit Page
+#      When user log on the webpage where username is "<username>" and "<password>"
+#      Then user should clicking on the ExpenseProductButton
+      And user should be able  on the create Button
+      Then user clicks on the Employee Dropdown listt
+      And user selects the Employee Namee
+      Then user should be able click on documents
+      Then user should be able createAttachment
+      Examples:
+        |username              |password        |
+        |in_ex_manager@info.com|LLighg88        |
+
+
+
+  @test7
+  Scenario: Accessing to Expenses to Submit
+    And User click on create button
+    And User put customer name "Munevver"
+    And User selects other options
+    When User saves the expenses
+    Then Verify the employee name
+
+
+
+
 
