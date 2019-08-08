@@ -17,9 +17,11 @@ Feature: Test Expenses Module
     And check the archiveButton, is it enabled or not
 
 
-git
+
   @test2
   Scenario: Uploading attachment to the Expenses To Submit
+
+
     Then click to create Button
     And user fills out all the mandatory fields
     And user clicks on Documents Button
@@ -29,6 +31,8 @@ git
 
   @test3
   Scenario Outline:  totalAmountToSubmitHilal
+
+
 
     And user create Button click
     And user clicking on productDropDown button
@@ -44,6 +48,8 @@ git
 
   @test4
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
+
+
     Then user is clicking  the create Button
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
@@ -55,6 +61,7 @@ git
 
   @test5
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
+
     Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
     And user selects the Employee Name
