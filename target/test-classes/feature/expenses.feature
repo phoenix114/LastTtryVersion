@@ -76,3 +76,15 @@ Feature: Test Expenses Module
 
 
 
+  @test7
+  Scenario: Accessing to Expenses to Submit
+    And User click on create button
+    And User put customer name "Munevver"
+    And User selects other options
+    When User saves the expenses
+    Then Verify the employee name
+
+
+
+
+

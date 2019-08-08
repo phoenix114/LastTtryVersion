@@ -77,9 +77,7 @@ Feature: Test Expenses Module
 
 
   @test7
-  Scenario Outline: Accessing to Expenses to Submit
-    And  user log in the webpage  with "<username>" and  "<password>"
-    And User press on expenses module
+  Scenario: Accessing to Expenses to Submit
     And User click on create button
     And User put customer name "Munevver"
     And User selects other options
@@ -88,8 +86,5 @@ Feature: Test Expenses Module
 
 
 
-    Examples:
-      | username               | password |
-      | in_ex_manager@info.com | LLighg88 |
 
 

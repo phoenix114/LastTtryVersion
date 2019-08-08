@@ -1,29 +1,19 @@
 package steps;
-
+import utilities.Config;
+import utilities.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import pages.ExpensesPage;
 import pages.LoginPage;
-import utilities.Config;
+
+
 
 public class MunevverPD104_test7 {
 
     LoginPage loginPage = new LoginPage();
     ExpensesPage expensesPage = new ExpensesPage();
-
-    @Given("user log in the webpage  with {string} and  {string}")
-    public void user_log_in_the_webpage_with_and(String username, String password) {
-
-        loginPage.briteERPLogin(username, password);
-    }
-
-    @Given("User press on expenses module")
-    public void user_press_on_expenses_module() {
-
-        expensesPage.expenses.click();
-    }
 
     @Given("User click on create button")
     public void user_click_on_create_button() {
