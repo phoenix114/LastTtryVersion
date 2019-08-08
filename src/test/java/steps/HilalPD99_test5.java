@@ -37,7 +37,7 @@ public class HilalPD99_test5 {
         selectEmployee.click();
         Thread.sleep(1000);
         Assert.assertTrue(!selectEmployee.isDisplayed());
-        Driver.getDriver().close();
+        //Driver.getDriver().close();
 
     }
 }
