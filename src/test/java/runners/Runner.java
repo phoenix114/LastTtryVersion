@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-        plugin = "html:target/ExpensesModul",
-        features = "C:\\Users\\Lutor\\IdeaProjects\\phoenixmonjuly15\\src\\test\\resources\\feature",
+        plugin = "html:target/cucumber",
+        features = "src/test/resources/feature/",
         glue = "steps",
-        tags = " @test" ,
-        dryRun=false
+        tags = "@test9",
+        dryRun = false
 )
 public class Runner {
 
