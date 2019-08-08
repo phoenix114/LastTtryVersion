@@ -10,18 +10,6 @@ import pages.LoginPage;
 import utilities.Driver;
 
 public class HilalPD94_test3 {
-    @When("User Loggin username {string} and password {string}")
-    public void user_Loggin_username_and_password(String string, String string2) throws InterruptedException {
-        Thread.sleep(1000);
-//        WebElement email  = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-login']//input"));
-//        WebElement password = Driver.getDriver().findElement(By.xpath("//div[@class='form-group field-password']/input"));
-//        email.sendKeys("in_ex_manager@info.com");
-//        password.sendKeys("LLighg88");
-
-        LoginPage lg= new LoginPage();
-        lg.briteERPLogin(string,string2);
-        Thread.sleep(1000);// When User Loggin and Password in
-    }
 
 
 
