@@ -76,3 +76,20 @@ Feature: Test Expenses Module
 
 
 
+  @test7
+  Scenario Outline: Accessing to Expenses to Submit
+    And  user log in the webpage  with "<username>" and  "<password>"
+    And User press on expenses module
+    And User click on create button
+    And User put customer name "Munevver"
+    And User selects other options
+    When User saves the expenses
+    Then Verify the employee name
+
+
+
+    Examples:
+      | username               | password |
+      | in_ex_manager@info.com | LLighg88 |
+
+
