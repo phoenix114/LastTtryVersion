@@ -563,4 +563,170 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenarioOutline({
+  "name": "select Employee Name From Dropdown List on Expenses To Submit Page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@test9"
+    }
+  ]
+});
+formatter.step({
+  "name": "user log on the webpage where username is \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user should clicking on the ExpenseProductButton",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "user should be able  on the create Button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user clicks on the Employee Dropdown listt",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "user selects the Employee Namee",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user should be able click on documents",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "user should be able createAttachment",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ]
+    },
+    {
+      "cells": [
+        "in_ex_manager@info.com",
+        "LLighg88"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "User on the Login page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(String,String)"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.NoSuchSessionException: invalid session id\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-23GFU7N\u0027, ip: \u0027192.168.1.190\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.3\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\Lutor\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 254bfe027761b46c0c3926166ce45929\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat steps.BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(BilalPD116_test1.java:19)\r\n\tat ✽.User on the web page and login username \"manager1Email\" and password \"manager1Password\"(src/test/resources/feature/expenses.feature:5)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "select Employee Name From Dropdown List on Expenses To Submit Page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@test"
+    },
+    {
+      "name": "@test9"
+    }
+  ]
+});
+formatter.step({
+  "name": "user log on the webpage where username is \"in_ex_manager@info.com\" and \"LLighg88\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_log_on_the_webpage_where_username_is_and(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should clicking on the ExpenseProductButton",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_should_clicking_on_the_ExpenseProductButton()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should be able  on the create Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_should_be_able_on_the_create_Button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on the Employee Dropdown listt",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_clicks_on_the_Employee_Dropdown_listt()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user selects the Employee Namee",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_selects_the_Employee_Namee()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should be able click on documents",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_should_be_able_click_on_documents()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should be able createAttachment",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MunevverPD123_test9.user_should_be_able_createAttachment()"
+});
+formatter.result({
+  "status": "skipped"
+});
 });

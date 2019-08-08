@@ -17,7 +17,7 @@ Feature: Test Expenses Module
     And check the archiveButton, is it enabled or not
 
 
-git
+
   @test2
   Scenario: Uploading attachment to the Expenses To Submit
     Then click to create Button
