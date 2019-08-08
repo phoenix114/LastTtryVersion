@@ -9,202 +9,6 @@ formatter.feature({
     }
   ]
 });
-formatter.background({
-  "name": "User on the Login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User in home page and clicking to Expense Product Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "creatingNewExpenseProduct",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@test"
-    },
-    {
-      "name": "@test1"
-    }
-  ]
-});
-formatter.step({
-  "name": "click to ExpenseProductButton",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.click_to_ExpenseProductButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to creat Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.click_to_creat_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "type product name in productNameBox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.type_product_name_in_productNameBox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Select Consumable in productTypeDropDownButon",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.select_Consumable_in_productTypeDropDownButon()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to taxTypesDropDown",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BilalPD116_test1.click_to_taxTypesDropDown()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to salesTaxSelection",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "BilalPD116_test1.click_to_salesTaxSelection()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "check the archiveButton, is it enabled or not",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "BilalPD116_test1.check_the_archiveButton_is_it_enabled_or_not()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User on the Login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User in home page and clicking to Expense Product Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Uploading attachment to the Expenses To Submit",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@test"
-    },
-    {
-      "name": "@test2"
-    }
-  ]
-});
-formatter.step({
-  "name": "click to create Button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DelalPD121_test2.click_to_create_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user fills out all the mandatory fields",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DelalPD121_test2.user_fills_out_all_the_mandatory_fields()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on Documents Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DelalPD121_test2.user_clicks_on_Documents_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on Import Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DelalPD121_test2.user_clicks_on_Import_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user uploads the file",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "DelalPD121_test2.user_uploads_the_file()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenarioOutline({
   "name": "totalAmountToSubmitHilal",
   "description": "",
@@ -306,7 +110,8 @@ formatter.match({
   "location": "HilalPD94_test3.user_create_Button_click()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".o_list_button_ad\"}\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-2BLJEF3\u0027, ip: \u0027192.168.23.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\Customer\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 484643cf4af33a128ba5d4c5b23736fe\n*** Element info: {Using\u003dcss selector, value\u003d.o_list_button_ad}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat steps.HilalPD94_test3.user_create_Button_click(HilalPD94_test3.java:25)\r\n\tat ✽.user create Button click(src/test/resources/feature/expenses.feature:33)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "user clicking on productDropDown button",
@@ -316,7 +121,7 @@ formatter.match({
   "location": "HilalPD94_test3.user_clicking_on_productDropDown_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user click on tshirt button",
@@ -326,7 +131,7 @@ formatter.match({
   "location": "HilalPD94_test3.user_click_on_tshirt_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user type unitPrice \"5\"",
@@ -336,7 +141,7 @@ formatter.match({
   "location": "HilalPD94_test3.user_type_unitPrice(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Then user type quantity \"3\"",
@@ -346,7 +151,7 @@ formatter.match({
   "location": "HilalPD94_test3.then_user_type_quantity(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user verifying actual title with expected title \"$ 15.00\"",
@@ -356,211 +161,6 @@ formatter.match({
   "location": "HilalPD94_test3.user_verifying_actual_title_with_expected_title(String)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@test4"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is clicking  the create Button",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user selects the product from the Dropdown list",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user writes the price \"\u003cunitPrice\u003e\" and quantity \"\u003cquantity\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user selects the employee name",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on the Submit button",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "unitPrice",
-        "quantity"
-      ]
-    },
-    {
-      "cells": [
-        "5.00",
-        "3"
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "User on the Login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User in home page and clicking to Expense Product Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@test"
-    },
-    {
-      "name": "@test4"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is clicking  the create Button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_is_clicking_the_create_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects the product from the Dropdown list",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_selects_the_product_from_the_Dropdown_list()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user writes the price \"5.00\" and quantity \"3\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_writes_the_price_and_quantity(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects the employee name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_selects_the_employee_name()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on the Submit button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD98_test4.user_clicks_on_the_Submit_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User on the Login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_on_the_web_page_and_login_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User in home page and clicking to Expense Product Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "BilalPD116_test1.user_in_home_page_and_clicking_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Choosing Employee Name From Dropdown List on Expenses To Submit Page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@test"
-    },
-    {
-      "name": "@test5"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is clicking  on the create Button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "HilalPD99_test5.user_is_clicking_on_the_create_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on the Employee Dropdown list",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD99_test5.user_clicks_on_the_Employee_Dropdown_list()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects the Employee Name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "HilalPD99_test5.user_selects_the_Employee_Name()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });

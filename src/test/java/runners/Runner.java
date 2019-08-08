@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/ExpensesModul",
         features = "src/test/resources/feature/expenses.feature",
         glue = "steps",
-        tags = " @test" ,
+        tags = " @test3" ,
         dryRun=false
 )
 public class Runner {

@@ -22,7 +22,7 @@ public class HilalPD94_test3 {
     @When("user create Button click")
     public void user_create_Button_click() throws InterruptedException {
         Thread.sleep(1000);
-        WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_add"));
+        WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_ad"));
         createButton.click();//And user create Button click
     }
 
