@@ -6,19 +6,7 @@ Feature: Test Expenses Module
     When User in home page and clicking to Expense Product Button
 
 
-  @test1
-  Scenario: creatingNewExpenseProduct
-    And click to ExpenseProductButton
-    And click to creat Button
-    And type product name in productNameBox
-    And Select Consumable in productTypeDropDownButon
-    When click to taxTypesDropDown
-    Then click to salesTaxSelection
-    And check the archiveButton, is it enabled or not
-
-
-
-  @test2
+  @Delal
   Scenario: Uploading attachment to the Expenses To Submit
     Then click to create Button
     And user fills out all the mandatory fields
@@ -27,7 +15,7 @@ Feature: Test Expenses Module
     And user uploads the file
 
 
-  @test3
+  @Hilal_1
   Scenario Outline:  totalAmountToSubmitHilal
 
     And user create Button click
@@ -42,7 +30,7 @@ Feature: Test Expenses Module
 
 
 
-  @test4
+  @Hilal_2
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
     Then user is clicking  the create Button
     And user selects the product from the Dropdown list
@@ -53,7 +41,7 @@ Feature: Test Expenses Module
          |unitPrice|quantity|
          |5.00       |3       |
 
-  @test5
+  @Hilal_3
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
     Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
@@ -61,7 +49,7 @@ Feature: Test Expenses Module
 
 
 
-    @test9
+    @Munnever_2
     Scenario Outline: select Employee Name From Dropdown List on Expenses To Submit Page
 #      When user log on the webpage where username is "<username>" and "<password>"
 #      Then user should clicking on the ExpenseProductButton
@@ -76,7 +64,7 @@ Feature: Test Expenses Module
 
 
 
-  @test7
+  @Munnever_1
   Scenario: Accessing to Expenses to Submit
     And User click on create button
     And User put customer name "Munevver"

@@ -17,7 +17,9 @@ import utilities.Driver;
 public class ExpensesModuleCucumberJenkins_steps {
     LoginPage loginPage = new LoginPage();
     ExpensesPage expensesPage = new ExpensesPage();
-    ExpensesPage ep = new ExpensesPage();
+
+    HomePage hp = new HomePage();
+
    // BilalPD116_test1
         @Given("User on the web page and login username {string} and password {string}")
         public void user_on_the_web_page_and_login_username_and_password(String string, String string2) throws InterruptedException {
@@ -29,23 +31,21 @@ public class ExpensesModuleCucumberJenkins_steps {
         }
         @When("User in home page and clicking to Expense Product Button")
         public void user_in_home_page_and_clicking_to_Expense_Product_Button() {
-            HomePage hp = new HomePage();
+
             hp.clickingOnExpensesButton();   // Then click to home page;
         }
 
-
-
         @Given("click to ExpenseProductButton")
         public void click_to_ExpenseProductButton() throws InterruptedException {
-            ExpensesPage ep = new ExpensesPage();
-            ep.clickingExpenseProductsButton(); // And click to ExpenseProductButton;
+            expensesPage.clickingExpenseProductsButton(); // And click to ExpenseProductButton;
             Thread.sleep(2000);
         }
 
         @Given("click to creat Button")
-        public void click_to_creat_Button() {
-            WebElement createButton = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[1]"));
-            createButton.click();//when click to creat Button;
+        public void click_to_creat_Button() throws InterruptedException {
+            //WebElement createButton = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[1]"));
+Thread.sleep(2000);
+            expensesPage.createButtonBilal.click();//when click to creat Button;
         }
 
         @Given("type product name in productNameBox")
@@ -87,14 +87,10 @@ public class ExpensesModuleCucumberJenkins_steps {
 
 
 
-        @When("click to Expense Product Button")
-        public void click_to_Expense_Product_Button() {
-            WebElement Expenses = Driver.getDriver().findElement(By.xpath("//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[9]/a/span"));
-            Expenses.click();// Then click to expenses button
-        }
 
         @Then("click to create Button")
         public void click_to_create_Button() throws InterruptedException {
+            Thread.sleep(2000);
             WebElement createButton = Driver.getDriver().findElement(By.xpath("//button[@class='btn btn-primary btn-sm o_list_button_add']"));
             createButton.click();// And click to creat button
             Thread.sleep(2000);
@@ -141,11 +137,6 @@ public class ExpensesModuleCucumberJenkins_steps {
 
 
 
-        @When("User click to expenses link")
-        public void user_click_to_expenses_link() {
-            WebElement expensesLink = Driver.getDriver().findElement(By.xpath("//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[9]/a/span"));
-            expensesLink.click();// And User click to expenses link
-        }
 
         @When("user create Button click")
         public void user_create_Button_click() throws InterruptedException {
@@ -199,12 +190,7 @@ public class ExpensesModuleCucumberJenkins_steps {
 
 
 
-        @When("user is clicking the  ExpenseProductButton")
-        public void user_is_clicking_the_ExpenseProductButton() {
-            WebElement expensesLink = Driver.getDriver().findElement(By.xpath("//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[9]/a/span"));
-            expensesLink.click();
 
-        }
 
         @Then("user is clicking  the create Button")
         public void user_is_clicking_the_create_Button() throws InterruptedException {
@@ -259,12 +245,7 @@ public class ExpensesModuleCucumberJenkins_steps {
    //  HilalPD99_test5
 
 
-        @When("user is clicking on the ExpenseProductButton")
-        public void user_is_clicking_on_the_ExpenseProductButton() throws InterruptedException {
-            WebElement expensesLink = Driver.getDriver().findElement(By.xpath("//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[9]/a/span"));
-            expensesLink.click();
-            Thread.sleep(2000);
-        }
+
 
         @Then("user is clicking  on the create Button")
         public void user_is_clicking_on_the_create_Button() {
@@ -273,7 +254,8 @@ public class ExpensesModuleCucumberJenkins_steps {
         }
 
         @Then("user clicks on the Employee Dropdown list")
-        public void user_clicks_on_the_Employee_Dropdown_list() {
+        public void user_clicks_on_the_Employee_Dropdown_list() throws InterruptedException {
+            Thread.sleep(2000);
             WebElement employeeDropdown = Driver.getDriver().findElement(By.id("o_field_input_27"));
             employeeDropdown.click();
         }
@@ -354,46 +336,48 @@ public class ExpensesModuleCucumberJenkins_steps {
 
         @Then("user should clicking on the ExpenseProductButton")
         public void user_should_clicking_on_the_ExpenseProductButton() {
-            ep.expenses.click();
+            expensesPage.expenses.click();
 
         }
 
         @Then("user should be able  on the create Button")
-        public void user_should_be_able_on_the_create_Button() {
-            ep.createButton.click();
-            ep.customer.sendKeys("munevver");
-            ep.product.click();
-            ep.chooseProduct.click();
-            ep.dateInput.click();
-            ep.datebox.click();
+        public void user_should_be_able_on_the_create_Button() throws InterruptedException {
+            Thread.sleep(2000);
+            expensesPage.createButton.click();
+            expensesPage.customer.sendKeys("munevver");
+            expensesPage.product.click();
+            expensesPage.chooseProduct.click();
+            expensesPage.dateInput.click();
+            expensesPage.datebox.click();
         }
 
         @Then("user clicks on the Employee Dropdown listt")
         public void user_clicks_on_the_Employee_Dropdown_listt() {
-            ep.employeeInput.click();
+            expensesPage.employeeInput.click();
 
 
         }
 
         @Then("user selects the Employee Namee")
         public void user_selects_the_Employee_Namee() {
-            ep.employeeName.click();
-            ep.clickSave.click();
+            expensesPage.employeeName.click();
+            expensesPage.clickSave.click();
         }
 
         @Then("user should be able click on documents")
         public void user_should_be_able_click_on_documents() {
-            ep.document.click();
+            expensesPage.document.click();
         }
 
         @Then("user should be able createAttachment")
-        public void user_should_be_able_createAttachment() {
-            ep.createAttachment.click();
-            ep.typeAttachment.sendKeys("munever");
-            Select select = new Select(ep.type);
+        public void user_should_be_able_createAttachment() throws InterruptedException {
+            Thread.sleep(2000);
+            expensesPage.createAttachment.click();
+            expensesPage.typeAttachment.sendKeys("munever");
+            Select select = new Select(expensesPage.type);
             select.selectByIndex(1);
-            ep.url.sendKeys("https://www.google.com/");
-            ep.save.click();
+            expensesPage.url.sendKeys("https://www.google.com/");
+            expensesPage.save.click();
 
 
         }

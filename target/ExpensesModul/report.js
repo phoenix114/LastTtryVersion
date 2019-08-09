@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/expenses.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/expenses.feature");
 formatter.feature({
   "name": "Test Expenses Module",
   "description": "",
@@ -21,7 +19,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -31,115 +29,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "creatingNewExpenseProduct",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@test"
-    },
-    {
-      "name": "@test1"
-    }
-  ]
-});
-formatter.step({
-  "name": "click to ExpenseProductButton",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.click_to_ExpenseProductButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to creat Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.click_to_creat_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "type product name in productNameBox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.type_product_name_in_productNameBox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Select Consumable in productTypeDropDownButon",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.select_Consumable_in_productTypeDropDownButon()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to taxTypesDropDown",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.click_to_taxTypesDropDown()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to salesTaxSelection",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.click_to_salesTaxSelection()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "check the archiveButton, is it enabled or not",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.check_the_archiveButton_is_it_enabled_or_not()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User on the Login page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User in home page and clicking to Expense Product Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -153,7 +43,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test2"
+      "name": "@Delal"
     }
   ]
 });
@@ -162,7 +52,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.click_to_create_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.click_to_create_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -172,7 +62,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_fills_out_all_the_mandatory_fields()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_fills_out_all_the_mandatory_fields()"
 });
 formatter.result({
   "status": "passed"
@@ -182,7 +72,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicks_on_Documents_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Documents_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -192,7 +82,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicks_on_Import_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Import_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -202,7 +92,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_uploads_the_file()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_uploads_the_file()"
 });
 formatter.result({
   "status": "passed"
@@ -213,7 +103,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@test3"
+      "name": "@Hilal_1"
     }
   ]
 });
@@ -272,7 +162,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -282,7 +172,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -296,7 +186,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test3"
+      "name": "@Hilal_1"
     }
   ]
 });
@@ -305,7 +195,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_create_Button_click()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_create_Button_click()"
 });
 formatter.result({
   "status": "passed"
@@ -315,7 +205,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicking_on_productDropDown_button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicking_on_productDropDown_button()"
 });
 formatter.result({
   "status": "passed"
@@ -325,7 +215,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_click_on_tshirt_button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_tshirt_button()"
 });
 formatter.result({
   "status": "passed"
@@ -335,7 +225,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_type_unitPrice(String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_type_unitPrice(String)"
 });
 formatter.result({
   "status": "passed"
@@ -345,7 +235,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.then_user_type_quantity(String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.then_user_type_quantity(String)"
 });
 formatter.result({
   "status": "passed"
@@ -355,7 +245,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_verifying_actual_title_with_expected_title(String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_verifying_actual_title_with_expected_title(String)"
 });
 formatter.result({
   "status": "passed"
@@ -366,7 +256,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@test4"
+      "name": "@Hilal_2"
     }
   ]
 });
@@ -419,7 +309,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -429,7 +319,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -443,7 +333,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test4"
+      "name": "@Hilal_2"
     }
   ]
 });
@@ -452,7 +342,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_is_clicking_the_create_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_the_create_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -462,7 +352,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_selects_the_product_from_the_Dropdown_list()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_product_from_the_Dropdown_list()"
 });
 formatter.result({
   "status": "passed"
@@ -472,7 +362,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_writes_the_price_and_quantity(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_writes_the_price_and_quantity(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -482,7 +372,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_selects_the_employee_name()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_employee_name()"
 });
 formatter.result({
   "status": "passed"
@@ -492,7 +382,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicks_on_the_Submit_button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Submit_button()"
 });
 formatter.result({
   "status": "passed"
@@ -507,7 +397,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -517,7 +407,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -531,7 +421,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test5"
+      "name": "@Hilal_3"
     }
   ]
 });
@@ -540,7 +430,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_is_clicking_on_the_create_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_on_the_create_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -550,7 +440,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicks_on_the_Employee_Dropdown_list()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_list()"
 });
 formatter.result({
   "status": "passed"
@@ -560,7 +450,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_selects_the_Employee_Name()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Name()"
 });
 formatter.result({
   "status": "passed"
@@ -571,7 +461,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@test9"
+      "name": "@Munnever_2"
     }
   ]
 });
@@ -624,7 +514,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -634,7 +524,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -648,7 +538,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test9"
+      "name": "@Munnever_2"
     }
   ]
 });
@@ -657,7 +547,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_should_be_able_on_the_create_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_on_the_create_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -667,7 +557,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_clicks_on_the_Employee_Dropdown_listt()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_listt()"
 });
 formatter.result({
   "status": "passed"
@@ -677,7 +567,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_selects_the_Employee_Namee()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Namee()"
 });
 formatter.result({
   "status": "passed"
@@ -687,7 +577,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_should_be_able_click_on_documents()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_click_on_documents()"
 });
 formatter.result({
   "status": "passed"
@@ -697,7 +587,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_should_be_able_createAttachment()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_createAttachment()"
 });
 formatter.result({
   "status": "passed"
@@ -712,7 +602,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_on_the_web_page_and_login_username_and_password(String,String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -722,7 +612,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
 });
 formatter.result({
   "status": "passed"
@@ -736,7 +626,7 @@ formatter.scenario({
       "name": "@test"
     },
     {
-      "name": "@test7"
+      "name": "@Munnever_1"
     }
   ]
 });
@@ -745,7 +635,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_click_on_create_button()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
 });
 formatter.result({
   "status": "passed"
@@ -755,7 +645,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_put_customer_name(String)"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_put_customer_name(String)"
 });
 formatter.result({
   "status": "passed"
@@ -765,7 +655,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_selects_other_options()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_selects_other_options()"
 });
 formatter.result({
   "status": "passed"
@@ -775,7 +665,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.user_saves_the_expenses()"
+  "location": "ExpensesModuleCucumberJenkins_steps.user_saves_the_expenses()"
 });
 formatter.result({
   "status": "passed"
@@ -785,10 +675,128 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ExpensesModuleCucumberJenkins.verify_the_employee_name()"
+  "location": "ExpensesModuleCucumberJenkins_steps.verify_the_employee_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/expensesProduct.feature");
+formatter.feature({
+  "name": "Test Expenses Module_1",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@test"
+    }
+  ]
+});
+formatter.background({
+  "name": "User on the Login page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User in home page and clicking to Expense Product Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "creatingNewExpenseProduct",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@test"
+    },
+    {
+      "name": "@Bilal"
+    }
+  ]
+});
+formatter.step({
+  "name": "click to ExpenseProductButton",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.click_to_ExpenseProductButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click to creat Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.click_to_creat_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "type product name in productNameBox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.type_product_name_in_productNameBox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select Consumable in productTypeDropDownButon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.select_Consumable_in_productTypeDropDownButon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click to taxTypesDropDown",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.click_to_taxTypesDropDown()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click to salesTaxSelection",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.click_to_salesTaxSelection()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "check the archiveButton, is it enabled or not",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ExpensesModuleCucumberJenkins_steps.check_the_archiveButton_is_it_enabled_or_not()"
 });
 formatter.result({
   "status": "passed"
 });
 });
->>>>>>> e939db8952cc0a02b54a1175127e3cace1af4f5c

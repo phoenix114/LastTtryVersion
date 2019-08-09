@@ -6,18 +6,6 @@ Feature: Test Expenses Module
     When User in home page and clicking to Expense Product Button
 
 
-  @Bilal
-  Scenario: creatingNewExpenseProduct
-    And click to ExpenseProductButton
-    And click to creat Button
-    And type product name in productNameBox
-    And Select Consumable in productTypeDropDownButon
-    When click to taxTypesDropDown
-    Then click to salesTaxSelection
-    And check the archiveButton, is it enabled or not
-
-
-
   @Delal
   Scenario: Uploading attachment to the Expenses To Submit
     Then click to create Button
@@ -53,7 +41,7 @@ Feature: Test Expenses Module
          |unitPrice|quantity|
          |5.00       |3       |
 
-  @tHilal_3
+  @Hilal_3
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
     Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
