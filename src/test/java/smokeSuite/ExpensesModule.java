@@ -384,7 +384,7 @@ PD-98 / As user i would like to be able to choose the item products on the drop 
     public void munevverAttachmentNameAndType() throws InterruptedException {
 
         LoginPage loginPage = new LoginPage();
-
+        Driver.getDriver().get(Config.getProperty("url"));
         loginPage.briteERPLogin(Config.getProperty("manager1Email"), Config.getProperty("manager1Password"));
 
         Thread.sleep(2000);

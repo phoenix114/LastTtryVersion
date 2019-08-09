@@ -1,0 +1,119 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User on the Login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12863340726,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager1Email\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"manager1Password\"",
+                  "offset": 69
+                }
+              ],
+              "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159430096,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in home page and clicking to Expense Product Button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "Choosing Employee Name From Dropdown List on Expenses To Submit Page",
+        "description": "",
+        "id": "test-expenses-module;choosing-employee-name-from-dropdown-list-on-expenses-to-submit-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 612203626,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user is clicking  on the create Button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_on_the_create_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 610246021,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user clicks on the Employee Dropdown list",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1392825591,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user selects the Employee Name",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Name()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@tHilal_3"
+          }
+        ]
+      }
+    ],
+    "name": "Test Expenses Module",
+    "description": "",
+    "id": "test-expenses-module",
+    "keyword": "Feature",
+    "uri": "C:/Users/Customer/IdeaProjects/phoenixmonjuly15updated/src/test/resources/features/expenses.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
