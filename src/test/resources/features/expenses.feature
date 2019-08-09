@@ -31,7 +31,7 @@ Feature: Test Expenses Module
     When User in home page and clicking to Expense Product Button
 
 
-  @test1
+  @Bilal
   Scenario: creatingNewExpenseProduct
     And click to ExpenseProductButton
     And click to creat Button
@@ -43,11 +43,14 @@ Feature: Test Expenses Module
 
 
 
-  @test2
+  @Delal
   Scenario: Uploading attachment to the Expenses To Submit
+<<<<<<< HEAD:target/test-classes/feature/expenses.feature
 
 
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
+=======
+>>>>>>> master:src/test/resources/features/expenses.feature
     Then click to create Button
     And user fills out all the mandatory fields
     And user clicks on Documents Button
@@ -61,9 +64,10 @@ Feature: Test Expenses Module
 
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
 
-  @test3
+  @Hilal_1
   Scenario Outline:  totalAmountToSubmitHilal
 
+<<<<<<< HEAD:target/test-classes/feature/expenses.feature
 <<<<<<< HEAD
     When User Loggin username "<username>" and password "<password>"
     And User click to expenses link
@@ -71,6 +75,8 @@ Feature: Test Expenses Module
 
 
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
+=======
+>>>>>>> master:src/test/resources/features/expenses.feature
     And user create Button click
     And user clicking on productDropDown button
     And user click on tshirt button
@@ -88,8 +94,9 @@ Feature: Test Expenses Module
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
 
 
-  @test4
+  @Hilal_2
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
+<<<<<<< HEAD:target/test-classes/feature/expenses.feature
 <<<<<<< HEAD
     And   user log in the webpage with "<username>" and "<password>"
     When user is clicking the  ExpenseProductButton
@@ -97,6 +104,8 @@ Feature: Test Expenses Module
 
 
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
+=======
+>>>>>>> master:src/test/resources/features/expenses.feature
     Then user is clicking  the create Button
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
@@ -121,14 +130,39 @@ Feature: Test Expenses Module
          |unitPrice|quantity|
          |5.00       |3       |
 
-  @test5
+  @tHilal_3
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
-
     Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
     And user selects the Employee Name
 
 
 >>>>>>> 55015f0dab23aae1030f6e9ae5485c2273e92286
+
+    @Munnever_2
+    Scenario Outline: select Employee Name From Dropdown List on Expenses To Submit Page
+#      When user log on the webpage where username is "<username>" and "<password>"
+#      Then user should clicking on the ExpenseProductButton
+      And user should be able  on the create Button
+      Then user clicks on the Employee Dropdown listt
+      And user selects the Employee Namee
+      Then user should be able click on documents
+      Then user should be able createAttachment
+      Examples:
+        |username              |password        |
+        |in_ex_manager@info.com|LLighg88        |
+
+
+
+  @Munnever_1
+  Scenario: Accessing to Expenses to Submit
+    And User click on create button
+    And User put customer name "Munevver"
+    And User selects other options
+    When User saves the expenses
+    Then Verify the employee name
+
+
+
 
 
