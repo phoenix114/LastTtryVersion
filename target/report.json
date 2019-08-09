@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 10176030280,
+              "duration": 5005695996,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -33,10 +33,10 @@
           },
           {
             "result": {
-              "duration": 121867361,
+              "duration": 122603755,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -46,19 +46,41 @@
         ]
       },
       {
-        "line": 10,
+        "before": [
+          {
+            "result": {
+              "duration": 6760239992,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 11,
         "name": "Uploading attachment to the Expenses To Submit",
         "description": "",
         "id": "test-expenses-module;uploading-attachment-to-the-expenses-to-submit",
+        "after": [
+          {
+            "result": {
+              "duration": 633557623,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4113400404,
+              "duration": 4120342028,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "click to create Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.click_to_create_Button()"
@@ -67,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 8485252752,
+              "duration": 8435403112,
               "status": "passed"
             },
-            "line": 12,
+            "line": 14,
             "name": "user fills out all the mandatory fields",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_fills_out_all_the_mandatory_fields()"
@@ -79,10 +101,10 @@
           },
           {
             "result": {
-              "duration": 2121298868,
+              "duration": 2130272687,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "user clicks on Documents Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Documents_Button()"
@@ -91,10 +113,10 @@
           },
           {
             "result": {
-              "duration": 135342511,
+              "duration": 150739634,
               "status": "passed"
             },
-            "line": 14,
+            "line": 16,
             "name": "user clicks on Import Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Import_Button()"
@@ -103,10 +125,10 @@
           },
           {
             "result": {
-              "duration": 2508534116,
+              "duration": 2579897220,
               "status": "passed"
             },
-            "line": 15,
+            "line": 17,
             "name": "user uploads the file",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_uploads_the_file()"
@@ -132,10 +154,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4038859821,
+              "duration": 4144603540,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -154,10 +176,10 @@
           },
           {
             "result": {
-              "duration": 112910528,
+              "duration": 128690466,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -167,19 +189,41 @@
         ]
       },
       {
-        "line": 29,
+        "before": [
+          {
+            "result": {
+              "duration": 5349794884,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 31,
         "name": "totalAmountToSubmitHilal",
         "description": "",
         "id": "test-expenses-module;totalamounttosubmithilal;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 650267140,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1102225302,
+              "duration": 1144420627,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "user create Button click",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_create_Button_click()"
@@ -188,10 +232,10 @@
           },
           {
             "result": {
-              "duration": 549862677,
+              "duration": 634525918,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "user clicking on productDropDown button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicking_on_productDropDown_button()"
@@ -200,10 +244,10 @@
           },
           {
             "result": {
-              "duration": 1232873692,
+              "duration": 1188951160,
               "status": "passed"
             },
-            "line": 23,
+            "line": 24,
             "name": "user click on tshirt button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_tshirt_button()"
@@ -212,10 +256,10 @@
           },
           {
             "result": {
-              "duration": 144114059,
+              "duration": 152979237,
               "status": "passed"
             },
-            "line": 24,
+            "line": 25,
             "name": "user type unitPrice \"5\"",
             "match": {
               "arguments": [
@@ -230,10 +274,10 @@
           },
           {
             "result": {
-              "duration": 1161344268,
+              "duration": 1144434849,
               "status": "passed"
             },
-            "line": 25,
+            "line": 26,
             "name": "Then user type quantity \"3\"",
             "match": {
               "arguments": [
@@ -248,10 +292,10 @@
           },
           {
             "result": {
-              "duration": 49815270,
+              "duration": 63974666,
               "status": "passed"
             },
-            "line": 26,
+            "line": 27,
             "name": "user verifying actual title with expected title \"$ 15.00\"",
             "match": {
               "arguments": [
@@ -283,10 +327,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3228057499,
+              "duration": 4151203042,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -305,10 +349,10 @@
           },
           {
             "result": {
-              "duration": 108411174,
+              "duration": 115032402,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -318,19 +362,41 @@
         ]
       },
       {
-        "line": 42,
+        "before": [
+          {
+            "result": {
+              "duration": 4882403254,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 47,
         "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;choosing-item-from-dropdown-list-on-expenses-to-submit-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 674410134,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3083990057,
+              "duration": 3105298484,
               "status": "passed"
             },
-            "line": 35,
+            "line": 39,
             "name": "user is clicking  the create Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_the_create_Button()"
@@ -339,10 +405,10 @@
           },
           {
             "result": {
-              "duration": 310481137,
+              "duration": 337718252,
               "status": "passed"
             },
-            "line": 36,
+            "line": 40,
             "name": "user selects the product from the Dropdown list",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_product_from_the_Dropdown_list()"
@@ -351,10 +417,10 @@
           },
           {
             "result": {
-              "duration": 6283801455,
+              "duration": 6311447852,
               "status": "passed"
             },
-            "line": 37,
+            "line": 41,
             "name": "user writes the price \"5.00\" and quantity \"3\"",
             "match": {
               "arguments": [
@@ -373,10 +439,10 @@
           },
           {
             "result": {
-              "duration": 331644578,
+              "duration": 343627975,
               "status": "passed"
             },
-            "line": 38,
+            "line": 42,
             "name": "user selects the employee name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_employee_name()"
@@ -385,10 +451,10 @@
           },
           {
             "result": {
-              "duration": 3350450291,
+              "duration": 3405270988,
               "status": "passed"
             },
-            "line": 39,
+            "line": 43,
             "name": "user clicks on the Submit button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Submit_button()"
@@ -414,10 +480,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3285815873,
+              "duration": 4018977961,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -436,10 +502,10 @@
           },
           {
             "result": {
-              "duration": 100903427,
+              "duration": 124894717,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -449,19 +515,41 @@
         ]
       },
       {
-        "line": 45,
+        "before": [
+          {
+            "result": {
+              "duration": 4896398699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 50,
         "name": "Choosing Employee Name From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;choosing-employee-name-from-dropdown-list-on-expenses-to-submit-page",
+        "after": [
+          {
+            "result": {
+              "duration": 645363638,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 625094618,
+              "duration": 694777920,
               "status": "passed"
             },
-            "line": 46,
+            "line": 51,
             "name": "user is clicking  on the create Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_on_the_create_Button()"
@@ -470,10 +558,10 @@
           },
           {
             "result": {
-              "duration": 2098625897,
+              "duration": 2124245235,
               "status": "passed"
             },
-            "line": 47,
+            "line": 52,
             "name": "user clicks on the Employee Dropdown list",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_list()"
@@ -482,10 +570,10 @@
           },
           {
             "result": {
-              "duration": 1209288526,
+              "duration": 1276806497,
               "status": "passed"
             },
-            "line": 48,
+            "line": 53,
             "name": "user selects the Employee Name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Name()"
@@ -511,10 +599,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3325197175,
+              "duration": 4050107220,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -533,10 +621,10 @@
           },
           {
             "result": {
-              "duration": 112865886,
+              "duration": 121230917,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -546,19 +634,41 @@
         ]
       },
       {
-        "line": 63,
+        "before": [
+          {
+            "result": {
+              "duration": 5036097156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 68,
         "name": "select Employee Name From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;select-employee-name-from-dropdown-list-on-expenses-to-submit-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 787517797,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3482078829,
+              "duration": 3508555450,
               "status": "passed"
             },
-            "line": 56,
+            "line": 61,
             "name": "user should be able  on the create Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_on_the_create_Button()"
@@ -567,10 +677,10 @@
           },
           {
             "result": {
-              "duration": 126679999,
+              "duration": 105369596,
               "status": "passed"
             },
-            "line": 57,
+            "line": 62,
             "name": "user clicks on the Employee Dropdown listt",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_listt()"
@@ -579,10 +689,10 @@
           },
           {
             "result": {
-              "duration": 331956676,
+              "duration": 353362684,
               "status": "passed"
             },
-            "line": 58,
+            "line": 63,
             "name": "user selects the Employee Namee",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Namee()"
@@ -591,10 +701,10 @@
           },
           {
             "result": {
-              "duration": 115474871,
+              "duration": 102858190,
               "status": "passed"
             },
-            "line": 59,
+            "line": 64,
             "name": "user should be able click on documents",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_click_on_documents()"
@@ -603,10 +713,10 @@
           },
           {
             "result": {
-              "duration": 3162938340,
+              "duration": 3241184204,
               "status": "passed"
             },
-            "line": 60,
+            "line": 65,
             "name": "user should be able createAttachment",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_createAttachment()"
@@ -632,10 +742,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3219219580,
+              "duration": 4063059309,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
             "match": {
               "arguments": [
@@ -654,10 +764,10 @@
           },
           {
             "result": {
-              "duration": 101195772,
+              "duration": 136266559,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User in home page and clicking to Expense Product Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
@@ -667,19 +777,41 @@
         ]
       },
       {
-        "line": 68,
+        "before": [
+          {
+            "result": {
+              "duration": 4911458046,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
+        "line": 73,
         "name": "Accessing to Expenses to Submit",
         "description": "",
         "id": "test-expenses-module;accessing-to-expenses-to-submit",
+        "after": [
+          {
+            "result": {
+              "duration": 646082255,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 592099483,
+              "duration": 671561346,
               "status": "passed"
             },
-            "line": 69,
+            "line": 74,
             "name": "User click on create button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
@@ -688,10 +820,10 @@
           },
           {
             "result": {
-              "duration": 609123864,
+              "duration": 658071974,
               "status": "passed"
             },
-            "line": 70,
+            "line": 75,
             "name": "User put customer name \"Munevver\"",
             "match": {
               "arguments": [
@@ -706,10 +838,10 @@
           },
           {
             "result": {
-              "duration": 1070586809,
+              "duration": 1157147530,
               "status": "passed"
             },
-            "line": 71,
+            "line": 76,
             "name": "User selects other options",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_other_options()"
@@ -718,10 +850,10 @@
           },
           {
             "result": {
-              "duration": 101593994,
+              "duration": 119054523,
               "status": "passed"
             },
-            "line": 72,
+            "line": 77,
             "name": "User saves the expenses",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_saves_the_expenses()"
@@ -730,10 +862,10 @@
           },
           {
             "result": {
-              "duration": 42847176,
+              "duration": 67645577,
               "status": "passed"
             },
-            "line": 73,
+            "line": 78,
             "name": "Verify the employee name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.verify_the_employee_name()"
@@ -779,7 +911,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3318042613,
+              "duration": 4060434916,
               "status": "passed"
             },
             "line": 4,
@@ -801,7 +933,7 @@
           },
           {
             "result": {
-              "duration": 113731861,
+              "duration": 120450275,
               "status": "passed"
             },
             "line": 5,
@@ -814,16 +946,38 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 4966972075,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.logInPage()"
+            }
+          }
+        ],
         "line": 7,
         "name": "creatingNewExpenseProduct",
         "description": "",
         "id": "test-expenses-module-1;creatingnewexpenseproduct",
+        "after": [
+          {
+            "result": {
+              "duration": 644869021,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2109262531,
+              "duration": 2111530974,
               "status": "passed"
             },
             "line": 8,
@@ -835,7 +989,7 @@
           },
           {
             "result": {
-              "duration": 2134860930,
+              "duration": 2105972854,
               "status": "passed"
             },
             "line": 9,
@@ -847,7 +1001,7 @@
           },
           {
             "result": {
-              "duration": 483696606,
+              "duration": 541111671,
               "status": "passed"
             },
             "line": 10,
@@ -859,7 +1013,7 @@
           },
           {
             "result": {
-              "duration": 135591004,
+              "duration": 140948037,
               "status": "passed"
             },
             "line": 11,
@@ -871,7 +1025,7 @@
           },
           {
             "result": {
-              "duration": 110606925,
+              "duration": 102329598,
               "status": "passed"
             },
             "line": 12,
@@ -883,7 +1037,7 @@
           },
           {
             "result": {
-              "duration": 223074589,
+              "duration": 223322292,
               "status": "passed"
             },
             "line": 13,
@@ -895,7 +1049,7 @@
           },
           {
             "result": {
-              "duration": 38864167,
+              "duration": 41238486,
               "status": "passed"
             },
             "line": 14,

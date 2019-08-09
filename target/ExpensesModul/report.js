@@ -14,6 +14,9 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
   "keyword": "Given "
@@ -97,6 +100,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenarioOutline({
   "name": "totalAmountToSubmitHilal",
   "description": "",
@@ -156,6 +162,9 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -250,6 +259,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenarioOutline({
   "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
   "description": "",
@@ -303,6 +315,9 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -387,10 +402,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -455,6 +476,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenarioOutline({
   "name": "select Employee Name From Dropdown List on Expenses To Submit Page",
   "description": "",
@@ -508,6 +532,9 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -592,10 +619,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -680,6 +713,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/features/expensesProduct.feature");
 formatter.feature({
   "name": "Test Expenses Module_1",
@@ -695,6 +731,9 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -797,6 +836,9 @@ formatter.match({
   "location": "ExpensesModuleCucumberJenkins_steps.check_the_archiveButton_is_it_enabled_or_not()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

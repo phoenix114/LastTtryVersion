@@ -2,18 +2,19 @@
 Feature: Test Expenses Module
 
   Background: User on the Login page
+
     Given User on the web page and login username "manager1Email" and password "manager1Password"
     When User in home page and clicking to Expense Product Button
 
 
   @Delal
   Scenario: Uploading attachment to the Expenses To Submit
+
     Then click to create Button
     And user fills out all the mandatory fields
     And user clicks on Documents Button
     And user clicks on Import Button
     And user uploads the file
-
 
   @Hilal_1
   Scenario Outline:  totalAmountToSubmitHilal
@@ -25,19 +26,23 @@ Feature: Test Expenses Module
     Then Then user type quantity "<quantity>"
     And user verifying actual title with expected title "<expectedTitle>"
     Examples:
+
       |unitPrice|quantity|expectedTitle|
       |5        |3       |$ 15.00      |
 
 
 
+
   @Hilal_2
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
+
     Then user is clicking  the create Button
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
     And user selects the employee name
     And user clicks on the Submit button
     Examples:
+
          |unitPrice|quantity|
          |5.00       |3       |
 
