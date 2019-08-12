@@ -4,11 +4,12 @@ Feature: Test Expenses Module
   Background: User on the Login page
     Given User on the web page and login username "manager1Email" and password "manager1Password"
     When User in home page and clicking to Expense Product Button
+    And User click on create button
 
 
   @Delal
   Scenario: Uploading attachment to the Expenses To Submit
-    Then click to create Button
+#    Then click to create Button
     And user fills out all the mandatory fields
     And user clicks on Documents Button
     And user clicks on Import Button
@@ -18,7 +19,7 @@ Feature: Test Expenses Module
   @Hilal_1
   Scenario Outline:  totalAmountToSubmitHilal
 
-    And user create Button click
+#    And user create Button click
     And user clicking on productDropDown button
     And user click on tshirt button
     And user type unitPrice "<unitPrice>"
@@ -32,7 +33,7 @@ Feature: Test Expenses Module
 
   @Hilal_2
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
-    Then user is clicking  the create Button
+#    Then user is clicking  the create Button
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
     And user selects the employee name
@@ -43,7 +44,7 @@ Feature: Test Expenses Module
 
   @Hilal_3
   Scenario: Choosing Employee Name From Dropdown List on Expenses To Submit Page
-    Then user is clicking  on the create Button
+#    Then user is clicking  on the create Button
     And user clicks on the Employee Dropdown list
     And user selects the Employee Name
 
@@ -66,11 +67,22 @@ Feature: Test Expenses Module
 
   @Munnever_1
   Scenario: Accessing to Expenses to Submit
-    And User click on create button
+
     And User put customer name "Munevver"
     And User selects other options
     When User saves the expenses
     Then Verify the employee name
+
+  @Test6Diana
+  Scenario: Expense Reports Verification
+#    Then user D is clicking  the create Button
+    And user D selects the product from the Dropdown list
+    And userD writes the price "<unitPrice>" and quantity "<quantity>"
+    And user D selects the employee name
+    And user D clicks on the Submit button
+    And user D clicks on the Approve button
+    Then user D clicks on the expensesReportAnalysisButton
+
 
 
 

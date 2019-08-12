@@ -14,6 +14,26 @@ public class ExpensesPage {
         driver = Driver.getDriver();
         PageFactory.initElements(driver, this);
     }
+    //Diana's @FindBy
+    @FindBy(xpath = "//button[.='Submit to Manager']")
+    public WebElement submitToManager;
+    //Diana's @FindBy
+    @FindBy(xpath = "//button[.='Approve']")
+    public WebElement approveButton;
+    //Diana's @FindBy
+    @FindBy(xpath = "//a[@data-menu-xmlid='hr_expense.menu_hr_expense_sheet_all_all']//span")
+    public WebElement expensesReportAnalysisLink;
+@FindBy(xpath = "//*[@id=\"o_field_input_99\"]")
+public WebElement productNameBox;
+@FindBy(xpath = "//*[@id=\"o_field_input_101\"]")
+public WebElement productTypeDropdown;
+@FindBy(xpath = "//*[@id=\"o_field_input_108\"]")
+public WebElement taxTypesDropdown;
+@FindBy(xpath = "//a[.='sales']")
+public WebElement salesTaxSelection;
+@FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div[1]/button/div[2]/span[1]")
+public WebElement archiveButton;
+
 
     @FindBy (xpath = "(//span[@class='oe_menu_text'])[28]")
     public WebElement expenseProductsButton;

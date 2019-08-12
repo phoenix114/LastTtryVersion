@@ -24,9 +24,9 @@ public class ExpensesModuleCucumberJenkins_steps {
         @Given("User on the web page and login username {string} and password {string}")
         public void user_on_the_web_page_and_login_username_and_password(String string, String string2) throws InterruptedException {
             Driver.getDriver().get(Config.getProperty("url"));
-            LoginPage lp = new LoginPage();
 
-            lp.briteERPLogin(Config.getProperty(string), Config.getProperty(string2));// Given website url
+
+            loginPage.briteERPLogin(Config.getProperty(string), Config.getProperty(string2));// Given website url
             Thread.sleep(2000);
         }
         @When("User in home page and clicking to Expense Product Button")
@@ -50,33 +50,36 @@ Thread.sleep(2000);
 
         @Given("type product name in productNameBox")
         public void type_product_name_in_productNameBox() {
-            WebElement productNameBox = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_99\"]"));
-            productNameBox.sendKeys(Config.getProperty("productName1"));// Then type product name in productNameBox;
+           // WebElement productNameBox = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_99\"]"));
+            expensesPage.productNameBox.sendKeys(Config.getProperty("productName1"));// Then type product name in productNameBox;
         }
 
         @Given("Select Consumable in productTypeDropDownButon")
         public void select_Consumable_in_productTypeDropDownButon() {
-            WebElement productTypeDropdown = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_101\"]"));
-            Select select = new Select(productTypeDropdown);
+          //  WebElement productTypeDropdown = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_101\"]"));
+
+            Select select = new Select(expensesPage.productTypeDropdown);
             select.selectByVisibleText("Consumable");// And Select Consumable in productTypeDropDownButon;
         }
 
         @When("click to taxTypesDropDown")
         public void click_to_taxTypesDropDown() {
-            WebElement taxTypesDropdown = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_108\"]"));
-            taxTypesDropdown.click();// When click to taxTypesDropDown;
+           // WebElement taxTypesDropdown = Driver.getDriver().findElement(By.xpath("//*[@id=\"o_field_input_108\"]"));
+           expensesPage.taxTypesDropdown.click();// When click to taxTypesDropDown;
         }
 
         @Then("click to salesTaxSelection")
         public void click_to_salesTaxSelection() {
-            WebElement salesTaxSelection = Driver.getDriver().findElement(By.xpath("//a[.='sales']"));
-            salesTaxSelection.click();//Then click to salesTaxSelection;
+          //  WebElement salesTaxSelection = Driver.getDriver().findElement(By.xpath("//a[.='sales']"));
+
+
+            expensesPage.salesTaxSelection.click();//Then click to salesTaxSelection;
         }
 
         @Then("check the archiveButton, is it enabled or not")
         public void check_the_archiveButton_is_it_enabled_or_not() {
-            WebElement archiveButton = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div[1]/button/div[2]/span[1]"));
-            boolean check = archiveButton.isEnabled();
+           // WebElement archiveButton = Driver.getDriver().findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div[1]/button/div[2]/span[1]"));
+            boolean check = expensesPage.archiveButton.isEnabled();
 
             Assert.assertTrue(check, "Verification of archieving new expense product is FAILED");// And check the archiveButton, is it enabled or not;
             //Driver.getDriver().close();
@@ -86,15 +89,6 @@ Thread.sleep(2000);
 //     DelalPD121_test2
 
 
-
-
-        @Then("click to create Button")
-        public void click_to_create_Button() throws InterruptedException {
-            Thread.sleep(2000);
-            WebElement createButton = Driver.getDriver().findElement(By.xpath("//button[@class='btn btn-primary btn-sm o_list_button_add']"));
-            createButton.click();// And click to creat button
-            Thread.sleep(2000);
-        }
 
         @Then("user fills out all the mandatory fields")
         public void user_fills_out_all_the_mandatory_fields() throws InterruptedException {
@@ -135,15 +129,6 @@ Thread.sleep(2000);
 
     // HilalPD94_test3 {
 
-
-
-
-        @When("user create Button click")
-        public void user_create_Button_click() throws InterruptedException {
-            Thread.sleep(1000);
-            WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_add"));
-            createButton.click();//And user create Button click
-        }
 
         @When("user clicking on productDropDown button")
         public void user_clicking_on_productDropDown_button() {
@@ -187,18 +172,6 @@ Thread.sleep(2000);
 
    // HilalPD98_test4
 
-
-
-
-
-
-        @Then("user is clicking  the create Button")
-        public void user_is_clicking_the_create_Button() throws InterruptedException {
-            Thread.sleep(2000);
-            WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_add"));
-            createButton.click();
-            Thread.sleep(1000);
-        }
 
         @Then("user selects the product from the Dropdown list")
         public void user_selects_the_product_from_the_Dropdown_list() {
@@ -244,14 +217,6 @@ Thread.sleep(2000);
 
    //  HilalPD99_test5
 
-
-
-
-        @Then("user is clicking  on the create Button")
-        public void user_is_clicking_on_the_create_Button() {
-            WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_add"));
-            createButton.click();
-        }
 
         @Then("user clicks on the Employee Dropdown list")
         public void user_clicks_on_the_Employee_Dropdown_list() throws InterruptedException {
@@ -323,27 +288,11 @@ Thread.sleep(2000);
   //   MunevverPD123_test9
 
 
-
-
-        @When("user log on the webpage where username is {string} and {string}")
-        public void user_log_on_the_webpage_where_username_is_and(String string, String string2) {
-            Driver.getDriver().get(Config.getProperty("url"));
-            LoginPage lg = new LoginPage();
-            lg.emailBox.sendKeys("in_ex_officer2@info.com");
-            lg.passwordBox.sendKeys("LLighg94");
-            lg.loginButton.click();
-        }
-
-        @Then("user should clicking on the ExpenseProductButton")
-        public void user_should_clicking_on_the_ExpenseProductButton() {
-            expensesPage.expenses.click();
-
-        }
-
         @Then("user should be able  on the create Button")
         public void user_should_be_able_on_the_create_Button() throws InterruptedException {
             Thread.sleep(2000);
-            expensesPage.createButton.click();
+           //
+            // expensesPage.createButton.click();
             expensesPage.customer.sendKeys("munevver");
             expensesPage.product.click();
             expensesPage.chooseProduct.click();
@@ -373,6 +322,7 @@ Thread.sleep(2000);
         public void user_should_be_able_createAttachment() throws InterruptedException {
             Thread.sleep(2000);
             expensesPage.createAttachment.click();
+            Thread.sleep(2000);
             expensesPage.typeAttachment.sendKeys("munever");
             Select select = new Select(expensesPage.type);
             select.selectByIndex(1);
@@ -383,7 +333,37 @@ Thread.sleep(2000);
         }
 
 
+    //Diana - Converting Bilal's PD112
 
+    @Then("user D selects the product from the Dropdown list")
+    public void user_D_selects_the_product_from_the_Dropdown_list() {
+        expensesPage.product.click();
+        expensesPage.chooseProduct.click();;
+    }
+    @Then("userD writes the price {string} and quantity {string}")
+    public void userd_writes_the_price_and_quantity(String string, String string2) {
+        expensesPage.dateInput.click();
+        expensesPage.datebox.click();
+    }
+    @Then("user D selects the employee name")
+    public void user_D_selects_the_employee_name() {
+        expensesPage.employeeInput.click();
+        expensesPage.employeeName.click();
+    }
+    @Then("user D clicks on the Submit button")
+    public void user_D_clicks_on_the_Submit_button() {
+        expensesPage.submitToManager.click();
+    }
+    @Then("user D clicks on the Approve button")
+    public void user_D_clicks_on_the_Approve_button() {
+        expensesPage.approveButton.click();
+    }
+    @Then("user D clicks on the expensesReportAnalysisButton")
+    public void user_D_clicks_on_the_expensesReportAnalysisButton() {
+       // Assert.fail();
+        expensesPage.expensesReportAnalysisLink.click();
+
+    }
 
 
 
