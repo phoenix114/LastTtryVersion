@@ -14,9 +14,6 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
   "keyword": "Given "
@@ -158,9 +155,6 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -308,9 +302,6 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
   "keyword": "Given "
@@ -401,9 +392,6 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -525,9 +513,6 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
   "keyword": "Given "
@@ -628,9 +613,6 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
@@ -844,9 +826,6 @@ formatter.background({
   "name": "User on the Login page",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",

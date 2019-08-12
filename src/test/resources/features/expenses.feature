@@ -10,12 +10,7 @@ Feature: Test Expenses Module
 
   @Delal
   Scenario: Uploading attachment to the Expenses To Submit
-<<<<<<< HEAD
 
-    Then click to create Button
-=======
-#    Then click to create Button
->>>>>>> ulugbek
     And user fills out all the mandatory fields
     And user clicks on Documents Button
     And user clicks on Import Button
@@ -40,12 +35,7 @@ Feature: Test Expenses Module
 
   @Hilal_2
   Scenario Outline:  Choosing Item From Dropdown List on Expenses To Submit Page
-<<<<<<< HEAD
 
-    Then user is clicking  the create Button
-=======
-#    Then user is clicking  the create Button
->>>>>>> ulugbek
     And user selects the product from the Dropdown list
     And user writes the price "<unitPrice>" and quantity "<quantity>"
     And user selects the employee name
@@ -65,8 +55,7 @@ Feature: Test Expenses Module
 
     @Munnever_2
     Scenario Outline: select Employee Name From Dropdown List on Expenses To Submit Page
-#      When user log on the webpage where username is "<username>" and "<password>"
-#      Then user should clicking on the ExpenseProductButton
+
       And user should be able  on the create Button
       Then user clicks on the Employee Dropdown listt
       And user selects the Employee Namee
@@ -88,7 +77,7 @@ Feature: Test Expenses Module
 
   @Test6Diana
   Scenario: Expense Reports Verification
-#    Then user D is clicking  the create Button
+
     And user D selects the product from the Dropdown list
     And userD writes the price "<unitPrice>" and quantity "<quantity>"
     And user D selects the employee name

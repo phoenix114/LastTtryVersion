@@ -130,19 +130,7 @@ Thread.sleep(2000);
     // HilalPD94_test3 {
 
 
-<<<<<<< HEAD
 
-
-
-        @When("user create Button click")
-        public void user_create_Button_click() throws InterruptedException {
-            Thread.sleep(1000);
-            WebElement createButton = Driver.getDriver().findElement(By.cssSelector(".o_list_button_add"));
-            createButton.click();//And user create Button click
-        }
-
-=======
->>>>>>> ulugbek
         @When("user clicking on productDropDown button")
         public void user_clicking_on_productDropDown_button() {
             WebElement productDropdown = Driver.getDriver().findElement(By.id("o_field_input_19"));
