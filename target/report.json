@@ -11,7 +11,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5005695996,
+=======
+              "duration": 13085458105,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -33,7 +37,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 122603755,
+=======
+              "duration": 392266751,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -42,10 +50,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 781627827,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -57,11 +78,14 @@
             }
           }
         ],
+=======
+>>>>>>> ulugbek
         "line": 11,
         "name": "Uploading attachment to the Expenses To Submit",
         "description": "",
         "id": "test-expenses-module;uploading-attachment-to-the-expenses-to-submit",
         "after": [
+<<<<<<< HEAD
           {
             "result": {
               "duration": 633557623,
@@ -82,17 +106,34 @@
             },
             "line": 13,
             "name": "click to create Button",
-            "match": {
-              "location": "ExpensesModuleCucumberJenkins_steps.click_to_create_Button()"
-            },
-            "keyword": "Then "
-          },
+=======
           {
             "result": {
+              "duration": 705346998,
+              "status": "passed"
+            },
+>>>>>>> ulugbek
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 8435403112,
               "status": "passed"
             },
             "line": 14,
+=======
+              "duration": 9018219442,
+              "status": "passed"
+            },
+            "line": 13,
+>>>>>>> ulugbek
             "name": "user fills out all the mandatory fields",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_fills_out_all_the_mandatory_fields()"
@@ -101,10 +142,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2130272687,
               "status": "passed"
             },
             "line": 15,
+=======
+              "duration": 2127343307,
+              "status": "passed"
+            },
+            "line": 14,
+>>>>>>> ulugbek
             "name": "user clicks on Documents Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Documents_Button()"
@@ -113,10 +161,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 150739634,
               "status": "passed"
             },
             "line": 16,
+=======
+              "duration": 134089376,
+              "status": "passed"
+            },
+            "line": 15,
+>>>>>>> ulugbek
             "name": "user clicks on Import Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_Import_Button()"
@@ -125,10 +180,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2579897220,
               "status": "passed"
             },
             "line": 17,
+=======
+              "duration": 2610472604,
+              "status": "passed"
+            },
+            "line": 16,
+>>>>>>> ulugbek
             "name": "user uploads the file",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_uploads_the_file()"
@@ -154,7 +216,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4144603540,
+=======
+              "duration": 10781522345,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -176,7 +242,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 128690466,
+=======
+              "duration": 232382236,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -185,10 +255,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 771592872,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -201,10 +284,14 @@
           }
         ],
         "line": 31,
+=======
+        "line": 30,
+>>>>>>> ulugbek
         "name": "totalAmountToSubmitHilal",
         "description": "",
         "id": "test-expenses-module;totalamounttosubmithilal;;2",
         "after": [
+<<<<<<< HEAD
           {
             "result": {
               "duration": 650267140,
@@ -225,14 +312,28 @@
             },
             "line": 22,
             "name": "user create Button click",
-            "match": {
-              "location": "ExpensesModuleCucumberJenkins_steps.user_create_Button_click()"
-            },
-            "keyword": "And "
-          },
+=======
           {
             "result": {
+              "duration": 658444517,
+              "status": "passed"
+            },
+>>>>>>> ulugbek
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 634525918,
+=======
+              "duration": 662071971,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 23,
@@ -244,7 +345,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1188951160,
+=======
+              "duration": 1239102625,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 24,
@@ -256,7 +361,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 152979237,
+=======
+              "duration": 156416666,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 25,
@@ -274,7 +383,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1144434849,
+=======
+              "duration": 1163995919,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 26,
@@ -292,7 +405,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 63974666,
+=======
+              "duration": 53832254,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 27,
@@ -327,7 +444,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4151203042,
+=======
+              "duration": 12490595168,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -349,7 +470,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 115032402,
+=======
+              "duration": 138081471,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -358,10 +483,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1513610656,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -374,10 +512,14 @@
           }
         ],
         "line": 47,
+=======
+        "line": 43,
+>>>>>>> ulugbek
         "name": "Choosing Item From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;choosing-item-from-dropdown-list-on-expenses-to-submit-page;;2",
         "after": [
+<<<<<<< HEAD
           {
             "result": {
               "duration": 674410134,
@@ -398,17 +540,34 @@
             },
             "line": 39,
             "name": "user is clicking  the create Button",
-            "match": {
-              "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_the_create_Button()"
-            },
-            "keyword": "Then "
-          },
+=======
           {
             "result": {
+              "duration": 659499725,
+              "status": "passed"
+            },
+>>>>>>> ulugbek
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 337718252,
               "status": "passed"
             },
             "line": 40,
+=======
+              "duration": 916422387,
+              "status": "passed"
+            },
+            "line": 37,
+>>>>>>> ulugbek
             "name": "user selects the product from the Dropdown list",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_product_from_the_Dropdown_list()"
@@ -417,10 +576,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6311447852,
               "status": "passed"
             },
             "line": 41,
+=======
+              "duration": 6326937816,
+              "status": "passed"
+            },
+            "line": 38,
+>>>>>>> ulugbek
             "name": "user writes the price \"5.00\" and quantity \"3\"",
             "match": {
               "arguments": [
@@ -439,10 +605,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 343627975,
               "status": "passed"
             },
             "line": 42,
+=======
+              "duration": 470393702,
+              "status": "passed"
+            },
+            "line": 39,
+>>>>>>> ulugbek
             "name": "user selects the employee name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_employee_name()"
@@ -451,10 +624,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3405270988,
               "status": "passed"
             },
             "line": 43,
+=======
+              "duration": 3641578554,
+              "status": "passed"
+            },
+            "line": 40,
+>>>>>>> ulugbek
             "name": "user clicks on the Submit button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Submit_button()"
@@ -480,7 +660,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4018977961,
+=======
+              "duration": 10066064145,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -502,7 +686,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 124894717,
+=======
+              "duration": 231181249,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -511,10 +699,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 715161509,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -527,10 +728,14 @@
           }
         ],
         "line": 50,
+=======
+        "line": 46,
+>>>>>>> ulugbek
         "name": "Choosing Employee Name From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;choosing-employee-name-from-dropdown-list-on-expenses-to-submit-page",
         "after": [
+<<<<<<< HEAD
           {
             "result": {
               "duration": 645363638,
@@ -551,17 +756,34 @@
             },
             "line": 51,
             "name": "user is clicking  on the create Button",
-            "match": {
-              "location": "ExpensesModuleCucumberJenkins_steps.user_is_clicking_on_the_create_Button()"
-            },
-            "keyword": "Then "
-          },
+=======
           {
             "result": {
+              "duration": 655067136,
+              "status": "passed"
+            },
+>>>>>>> ulugbek
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 2124245235,
               "status": "passed"
             },
             "line": 52,
+=======
+              "duration": 2123558224,
+              "status": "passed"
+            },
+            "line": 48,
+>>>>>>> ulugbek
             "name": "user clicks on the Employee Dropdown list",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_list()"
@@ -570,10 +792,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1276806497,
               "status": "passed"
             },
             "line": 53,
+=======
+              "duration": 1280860618,
+              "status": "passed"
+            },
+            "line": 49,
+>>>>>>> ulugbek
             "name": "user selects the Employee Name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Name()"
@@ -599,7 +828,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4050107220,
+=======
+              "duration": 10845249702,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -621,7 +854,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 121230917,
+=======
+              "duration": 409148121,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -630,10 +867,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820152636,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -646,17 +896,28 @@
           }
         ],
         "line": 68,
+=======
+        "line": 64,
+>>>>>>> ulugbek
         "name": "select Employee Name From Dropdown List on Expenses To Submit Page",
         "description": "",
         "id": "test-expenses-module;select-employee-name-from-dropdown-list-on-expenses-to-submit-page;;2",
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 787517797,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.teardown(Scenario)"
+=======
+              "duration": 657439876,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+>>>>>>> ulugbek
             }
           }
         ],
@@ -665,10 +926,17 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3508555450,
               "status": "passed"
             },
             "line": 61,
+=======
+              "duration": 3008257968,
+              "status": "passed"
+            },
+            "line": 57,
+>>>>>>> ulugbek
             "name": "user should be able  on the create Button",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_on_the_create_Button()"
@@ -677,10 +945,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 105369596,
               "status": "passed"
             },
             "line": 62,
+=======
+              "duration": 111045443,
+              "status": "passed"
+            },
+            "line": 58,
+>>>>>>> ulugbek
             "name": "user clicks on the Employee Dropdown listt",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_clicks_on_the_Employee_Dropdown_listt()"
@@ -689,10 +964,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 353362684,
               "status": "passed"
             },
             "line": 63,
+=======
+              "duration": 359744901,
+              "status": "passed"
+            },
+            "line": 59,
+>>>>>>> ulugbek
             "name": "user selects the Employee Namee",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_the_Employee_Namee()"
@@ -701,10 +983,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 102858190,
               "status": "passed"
             },
             "line": 64,
+=======
+              "duration": 114084650,
+              "status": "passed"
+            },
+            "line": 60,
+>>>>>>> ulugbek
             "name": "user should be able click on documents",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_click_on_documents()"
@@ -713,10 +1002,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3241184204,
               "status": "passed"
             },
             "line": 65,
+=======
+              "duration": 4976137105,
+              "status": "passed"
+            },
+            "line": 61,
+>>>>>>> ulugbek
             "name": "user should be able createAttachment",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_should_be_able_createAttachment()"
@@ -742,7 +1038,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4063059309,
+=======
+              "duration": 10744016005,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 6,
@@ -764,7 +1064,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 136266559,
+=======
+              "duration": 449528533,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 7,
@@ -773,10 +1077,23 @@
               "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 803401242,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "before": [
           {
             "result": {
@@ -789,10 +1106,14 @@
           }
         ],
         "line": 73,
+=======
+        "line": 69,
+>>>>>>> ulugbek
         "name": "Accessing to Expenses to Submit",
         "description": "",
         "id": "test-expenses-module;accessing-to-expenses-to-submit",
         "after": [
+<<<<<<< HEAD
           {
             "result": {
               "duration": 646082255,
@@ -813,17 +1134,34 @@
             },
             "line": 74,
             "name": "User click on create button",
-            "match": {
-              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
-            },
-            "keyword": "And "
-          },
+=======
           {
             "result": {
+              "duration": 650721066,
+              "status": "passed"
+            },
+>>>>>>> ulugbek
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 658071974,
               "status": "passed"
             },
             "line": 75,
+=======
+              "duration": 708659588,
+              "status": "passed"
+            },
+            "line": 71,
+>>>>>>> ulugbek
             "name": "User put customer name \"Munevver\"",
             "match": {
               "arguments": [
@@ -838,10 +1176,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1157147530,
               "status": "passed"
             },
             "line": 76,
+=======
+              "duration": 1243869042,
+              "status": "passed"
+            },
+            "line": 72,
+>>>>>>> ulugbek
             "name": "User selects other options",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_selects_other_options()"
@@ -850,10 +1195,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 119054523,
               "status": "passed"
             },
             "line": 77,
+=======
+              "duration": 125567505,
+              "status": "passed"
+            },
+            "line": 73,
+>>>>>>> ulugbek
             "name": "User saves the expenses",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.user_saves_the_expenses()"
@@ -862,10 +1214,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 67645577,
               "status": "passed"
             },
             "line": 78,
+=======
+              "duration": 55636895,
+              "status": "passed"
+            },
+            "line": 74,
+>>>>>>> ulugbek
             "name": "Verify the employee name",
             "match": {
               "location": "ExpensesModuleCucumberJenkins_steps.verify_the_employee_name()"
@@ -879,6 +1238,172 @@
           },
           {
             "name": "@Munnever_1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User on the Login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11470071333,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User on the web page and login username \"manager1Email\" and password \"manager1Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager1Email\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"manager1Password\"",
+                  "offset": 69
+                }
+              ],
+              "location": "ExpensesModuleCucumberJenkins_steps.user_on_the_web_page_and_login_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 357909840,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in home page and clicking to Expense Product Button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_in_home_page_and_clicking_to_Expense_Product_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 866452649,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_click_on_create_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "Expense Reports Verification",
+        "description": "",
+        "id": "test-expenses-module;expense-reports-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 1181692696,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 908617553,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "user D selects the product from the Dropdown list",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_D_selects_the_product_from_the_Dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514886309,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "userD writes the price \"\u003cunitPrice\u003e\" and quantity \"\u003cquantity\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cunitPrice\u003e\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\u003cquantity\u003e\"",
+                  "offset": 50
+                }
+              ],
+              "location": "ExpensesModuleCucumberJenkins_steps.userd_writes_the_price_and_quantity(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364353293,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user D selects the employee name",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_D_selects_the_employee_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137522460,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user D clicks on the Submit button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_D_clicks_on_the_Submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1519509713,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user D clicks on the Approve button",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_D_clicks_on_the_Approve_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113050380,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user D clicks on the expensesReportAnalysisButton",
+            "match": {
+              "location": "ExpensesModuleCucumberJenkins_steps.user_D_clicks_on_the_expensesReportAnalysisButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@Test6Diana"
           }
         ]
       }
@@ -911,7 +1436,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4060434916,
+=======
+              "duration": 10575834410,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 4,
@@ -933,7 +1462,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 120450275,
+=======
+              "duration": 144648182,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 5,
@@ -964,11 +1497,19 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 644869021,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.teardown(Scenario)"
+=======
+              "duration": 676727564,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+>>>>>>> ulugbek
             }
           }
         ],
@@ -977,7 +1518,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2111530974,
+=======
+              "duration": 2124222322,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 8,
@@ -989,7 +1534,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2105972854,
+=======
+              "duration": 2115395069,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 9,
@@ -1001,7 +1550,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 541111671,
+=======
+              "duration": 581044479,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 10,
@@ -1013,7 +1566,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 140948037,
+=======
+              "duration": 167213695,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 11,
@@ -1025,7 +1582,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 102329598,
+=======
+              "duration": 133867746,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 12,
@@ -1037,7 +1598,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 223322292,
+=======
+              "duration": 186470568,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 13,
@@ -1049,7 +1614,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 41238486,
+=======
+              "duration": 42987818,
+>>>>>>> ulugbek
               "status": "passed"
             },
             "line": 14,
