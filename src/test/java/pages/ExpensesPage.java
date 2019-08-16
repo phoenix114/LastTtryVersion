@@ -84,6 +84,9 @@ public class ExpensesPage {
     @FindBy(xpath = "//a[@class='o_field_url o_field_widget o_form_uri o_text_overflow']")
     public WebElement actualUrl;
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[1]")
+    public WebElement createButtonBilal;
+
     public void clickingExpenseProductsButton(){
 
         expenseProductsButton.click();
@@ -106,7 +109,7 @@ public class ExpensesPage {
     @FindBy(id = "o_field_input_19")
     public WebElement productWindowA;
 
-    @FindBy(xpath = "//a[.='[///] iphone 8']")
+    @FindBy(xpath = "//*[@id=\"ui-id-20\"]/a")
     public WebElement iPhoneInProductA;
 
     @FindBy(xpath = "//div[@class='o_group']//table[2]//tr[4]//label")
