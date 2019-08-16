@@ -5,16 +5,24 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeClass;
 import utilities.Config;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Hooks {
+    @BeforeClass
+    public void waiting(){
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
+
     @Before
 public void logInPage(){
 
-        Driver.getDriver().get(Config.getProperty("url"));
+        Driver.getDriver().get(Config.getProperty("SchoolURL"));
 }
 
     @After
@@ -28,7 +36,7 @@ public void logInPage(){
             byte [] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png");
         }
-        Driver.quitDriver();
+//        Driver.quitDriver();
 
     }
 }
